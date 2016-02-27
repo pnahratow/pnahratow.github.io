@@ -22,7 +22,8 @@ I'm a hobbyist and learned most of this as I went along. Aside from the part abo
 * [Taniwha's mdl exporter](http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl) - for exporting to mdl format
 * [Krita](http://krita.org) - for digital painting
 * [Fteqcc](http://fte.triptohell.info/ftedownloads/) - for compiling quakec
-* [QuakeC v1.06 Base](http://www.moddb.com/games/quake/downloads/quake-c-version-106)
+* [QuakeC v1.06 Base](http://www.moddb.com/games/quake/downloads/quake-c-version-106) -  as a codebase for quakec
+* [Slade3](http://slade.mancubus.net/) -  for exploring quake1 pak files
 
 # Creating The Model
 
@@ -121,11 +122,35 @@ My brushstrokes are wonky and I don't know how to do close-up pixel pushing. Wha
 
 Learn about blending modes regarding brushes and layers. There are cool light effects like rimlights, neon glow, fire and subsurface scattering and all those flashy things. They look great on textures. Blending modes help with this. You should become familiar with multiply, screen/lighten, dodge, burn and overlay. Check out this [Video](https://www.youtube.com/watch?v=AybFWViT-3Q).
 
-### More Color
+### Use More Colors
 
 A quick thing on colors. If you experience the problem that your skintones look dull or off. Check out this [Video](https://www.youtube.com/watch?v=PPdkEEYo3F0).
 
-# Rigging and Animation
+# Rigging
+
+Rigging means preparing the model in a way that makes it easy to pose the model. Usually by applying some kind of virtual bone structure where you can move hands or feet in 3d space and the other joints move in some realistic manner too which saves you time.
+
+The keyword here is inverse kinematics and I can only point you to videos by Darrin Lile again. [This one](https://www.youtube.com/watch?v=Q2MGttB1E7U&list=PLyelx0TsmSpf-8xZfjZveokSsIwj0F3lo&index=22) and following explain the manual process defining bones and their properties and it's the method I used.
+
+At the time of writing he is uploading a simplyfied method for humanoid models which should be interesting [here](https://www.youtube.com/playlist?list=PLyelx0TsmSpfi0fZpJGqdW9IAmrY-iDQR).
+
+![Bone rig]({filename}/images/bone_rig.png)
+
+# Animation
+
+Now this again is a topic that dabbles in the domain of art. Animation is hard and demands a feel for poses, motion and movement. Even if you are good at this things might not look they way you intend. This is especially true for walk and run animations because it's a thing we as humans see a lot and can see every minute problem in. See [uncanny valley](https://en.wikipedia.org/wiki/Uncanny_valley) for more information about this.
+
+I used keyframe animation which is a technique where you define the distinct poses that appear in the animation you want to make and the software (blender) does the job of interpolating the in-between states that appear.
+
+I made an in-game [youtube video](https://youtu.be/sDa8cVHDhP4) of my final model. At around 00:46 you can see all the animations that the model uses.
+
+This is a part I will have to learn alot about too. For the technicalities I can again refer you to [Darrin Lile](https://www.youtube.com/playlist?list=PLyelx0TsmSpfoqyS2sBZvsuIL5av5DkJu) other than that you'll have to trial-and-error yourself through this. Which is what I did too.
+
+Some things to note
+
+* Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake
+* The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation.
+* Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.
 
 # Exporting To MDL
 
@@ -150,4 +175,8 @@ Blender plugins are written in python so you'll only need a text editor. The plu
 
 This way the plugin won't consider the last 32 color anymore when finding the closest color match and your texture will be evenly lit.
 
+## Scale, Location and Rotation
+
 # QuakeC
+
+https://tomeofpreach.wordpress.com/qexpo-tutorial/
