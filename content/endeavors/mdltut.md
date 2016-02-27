@@ -34,9 +34,11 @@ There is alot to learn about blender and I haven't really scratched the surface 
 
 Aside from that I would urge you to visit the [Youtube Channel of Darrin Lile](https://www.youtube.com/user/DarrinLile) because thats where I learned what I wanted in an enjoyable and easy to grasp manner.
 
+![Plain model]({filename}/images/plain_model.png)
+
 # Creating The UV Map
 
-In order to paint the texture the model needs to be unwrapped. Which means the models needs information about how 2d image would be applied to the 3d polygons to be its texture. A result of this looks something like this.
+In order to paint the texture the model needs to be unwrapped. Which means the models needs information about how a 2d image would be applied to the 3d polygons to be its texture. A result of this looks something like this.
 
 ![UV Maps example]({filename}/images/uv_map.png)
 
@@ -48,6 +50,7 @@ The tutorial talks a bit about stretching and seam placement. One thing I would 
 
 ## Applying the image texture
 
+Blender has different renderers and applying texture has something to do with materials which are defined differently for these renderers. I didn't care to learn much about this. Just know that the MDL exporter expects the texture to be at a specific place when exporting. To achieve this try to drag'n'drop your image file from you file explorer onto the object in blender. I don't know what magic happens there but it just worked and I didn't want to think about it more than this.
 
 # Painting The Texture
 
@@ -96,11 +99,17 @@ A big round brush with soft edges and very low opacity. I use this to create sof
 
 ## Workflow and Tips
 
-I attack the empty texture with this basic arsenal until I'm happy with what I see. At this point I feel like a crazy chicken running in circles hoping for something good to happen. All the brushstrokes are bad. Colors look off or boring but I know it gets better when I invest more time so I keep at it. I can't say much about this but other people can. Here is a [youtube user](https://www.youtube.com/user/Sycra) that I like . I'm sure you can find more. 
+I attack the empty texture with this basic arsenal until I'm happy with what I see. At this point I feel like a crazy person running in circles hoping for something good to happen. All the brushstrokes are bad. Colors look off or boring but I know it gets better when I invest more time so I keep at it. I can't say much about this but other people can. Check out youtube for people who post about general digital art like [Sycra](https://www.youtube.com/user/Sycra). I'm sure you can find many more. 
 
-Regarding general workflow
+### Basic Shading Progression
 
-Here are some other generic bits of information.
+PLACEHOLDER: I didn't think of saving a lot of work-in-progress stages with this texture. I will put a series of progression images here next time around.
+
+### 2d-3d Back And Forth
+
+I paint exclusively in the 2d software but I need to constantly check the 3d model if everything is right. To do this comfortably I have blender on the 2nd monitor (or in the background). I use "3D View Full" as the screenlayout to get rid of the grid and stuff. In the view options (<kbd>N</kbd>) I activate Display -> Shadeless because I don't want blenders ugly shading but fullbright instead. I split the window and also open a UV-Image-Editor view and activiate the options side-bar (<kbd>N</kbd>). Under image there is the texture file and you can press the refresh button next to it to reload the texture. Blender can read PSD files and krita and gimp can also work with them. PSD files preserve layers and thats how this all becomes comfortable. Paint a little, save, press refresh in blender, repeat.
+
+![Blender Reload Texture]({filename}/images/reload_tex.png)
 
 ### Double Resolution
 
@@ -112,12 +121,33 @@ My brushstrokes are wonky and I don't know how to do close-up pixel pushing. Wha
 
 Learn about blending modes regarding brushes and layers. There are cool light effects like rimlights, neon glow, fire and subsurface scattering and all those flashy things. They look great on textures. Blending modes help with this. You should become familiar with multiply, screen/lighten, dodge, burn and overlay. Check out this [Video](https://www.youtube.com/watch?v=AybFWViT-3Q).
 
-### Moar Color
+### More Color
 
 A quick thing on colors. If you experience the problem that your skintones look dull or off. Check out this [Video](https://www.youtube.com/watch?v=PPdkEEYo3F0).
 
-# Rigging And Animation
+# Rigging and Animation
 
 # Exporting To MDL
+
+This step is pretty easy because the MDL exporter by Bill Currie (taniwha) is awesome and does everthing for you. Note that animation is exported from frame 1 to the frame you have currently selected.
+
+## The Quake Palette
+
+Quake 1 textures have only 256 colors.
+
+![Quake color palette]({filename}/images/quake_pal.png)
+
+Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
+
+Blender plugins are written in python so you'll only need a text editor. The plugin consists of a couple of *.py files in a zip. Unzip. Open quakepal.py. Comment out the last 32 entries in this set by putting a hash sign (#) in front of them. Save and zip the whole thing again. Reinstall the plugin.
+
+    :::python
+        ...
+        # (0xff, 0xf7, 0xc7),
+        # (0xff, 0xff, 0xff),
+        # (0x9f, 0x5b, 0x53),
+    )
+
+This way the plugin won't consider the last 32 color anymore when finding the closest color match and your texture will be evenly lit.
 
 # QuakeC

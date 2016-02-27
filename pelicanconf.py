@@ -14,7 +14,7 @@ DEFAULT_LANG = 'en'
 
 # my settings
 THEME = "theme/pelican-bold"
-MD_EXTENSIONS = ['toc']
+MD_EXTENSIONS = ['codehilite(css_class=highlight,linenums=False)','toc']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
