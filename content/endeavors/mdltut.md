@@ -164,7 +164,7 @@ This step is pretty easy because the MDL exporter by Bill Currie (taniwha) is aw
 
 Quake 1 textures have only 256 colors. Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
 
-Blender plugins are written in python so you'll only need a text editor. The plugin consists of a couple of *.py files in a zip. Unzip. Open quakepal.py. Comment out the last 32 entries in this set by putting a hash sign (#) in front of them. Save and zip the whole thing again. Reinstall the plugin.
+Blender plugins are written in python so you'll only need a text editor. The plugin consists of a couple of *.py files in a zip. Unzip. Open quakepal.py. Comment out the last 32 entries in this set by putting a `#` in front of them. Save and zip the whole thing again. Reinstall the plugin.
 
     :::python
         ...
@@ -174,6 +174,10 @@ Blender plugins are written in python so you'll only need a text editor. The plu
     )
 
 This way the plugin won't consider the last 32 color anymore when finding the closest color match and your texture will be evenly lit.
+
+This is how the texture looks after the palette conversion. You can see some artifacts in the gradients which makes it look like its 1996.
+
+![Texture after conversion]({filename}/images/after_quakepal.png)
 
 ## Scale, Location and Rotation
 
@@ -196,14 +200,24 @@ Size defines the bounding box. Model defines the model that is shown in the edit
 
 To add your .fgd file in trenchbroom got to the inspector on the right. At the bottom of the entity tab you can use external .fgd files. At the bottom of the map tab you can activate mods directories to be read.
 
+![Trenchbroom screenshot]({filename}/images/trenchbroom.png)
+
 # QuakeC
 
 Having experience in programming will help but if you made it here you probably don't care and are willing to learn whatever is necessary. Which is good because programming is fun.
 
 ## Setup
 
-You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my `PATH` environment variable and call it using `qcc` anywhere). When you run the compiler it looks for a file named `progs.src`. It then compiles every quakec file listed there in order and creates the resultfile `PROGS.DAT` in the parent directory (which should be the root directory of your mod). When you start quake with the `-game <yourdirectory>` parameter quake will read your `PROGS.DAT` instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where [the fun starts](http://www.insideqc.com/qctut/).
+You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my `PATH` environment variable and call it using `qcc` anywhere). When you run the compiler it looks for a file named `progs.src` in the current directory. It then compiles every quakec file listed there in order and creates the resultfile `PROGS.DAT` in the parent directory (which should be the root directory of your mod). When you start quake with the `-game <yourdirectory>` parameter quake will read your `PROGS.DAT` instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where [the fun starts](http://www.insideqc.com/qctut/).
 
-## Monster Code
+## Coding
 
-[Tutorial by Preach](https://tomeofpreach.wordpress.com/qexpo-tutorial/)
+Read this [Tutorial by Preach](https://tomeofpreach.wordpress.com/qexpo-tutorial/) (specifically Day6 and 7). If you use GMAX instead of blender the whole tutorial would be the one to read in the first place. However he explains how the animation data from the model is linked to the behaviour in quakec.
+
+Blender animation frame 0 gets discarded on mdl export and your animations should start at 1. Quake counts starting from 0 but that shouldn't concern you since you should use the `$frame` directive mentioned in the preach's tutorial. You only need to know how many frames each of your animations last. Give each of your animation frames a name with this `$frame` directive and then refer to these in the think functions.
+
+Of course defining animations isn't the end of it. For the whole behaviour part I'd suggest you to scour about in the files of the quakec base. The definitions for each original monster is in there ranging from melee attacks, to projectiles, grenades, movement and more. Use what you can find.
+
+I hope you did get good infomation out of this tutorial and I wish you good look realizing your project.
+
+![Imgame screenshot]({filename}/images/ingame.png)
