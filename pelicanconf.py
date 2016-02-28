@@ -10,7 +10,7 @@ PATH = 'content'
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
-DEFAULT_DATE_FORMAT =('%d-%m-%Y')
+DEFAULT_DATE_FORMAT =('%Y-%m-%d')
 
 # my settings
 THEME = "theme/pelican-bold"
@@ -41,7 +41,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
                                                                                                                                                                                                                                                                                
 # Social widget                                                                                                                                                                                                                                                                
 SOCIAL = (('github', 'https://github.com/pnahratow'),                                                                                                                                                                                                                          
-          ('mail', 'mailto:philippnahratow@gmail.com')
+          # ('mail', 'mailto:philippnahratow@gmail.com')
          )      
 
 DEFAULT_PAGINATION = 20

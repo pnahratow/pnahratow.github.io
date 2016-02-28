@@ -1,6 +1,6 @@
 Title: Creating Models For Quake 1
 Slug: creating-models-for-quake-1
-Date: 2016-02-26
+Date: 2016-02-28
 Tags: gaming
 
 
@@ -109,7 +109,7 @@ PLACEHOLDER: I didn't think of saving a lot of work-in-progress stages with this
 
 ### 2d-3d Back And Forth
 
-I paint exclusively in the 2d software but I need to constantly check the 3d model if everything is right. To do this comfortably I have blender on the 2nd monitor (or in the background). I use "3D View Full" as the screenlayout to get rid of the grid and stuff. In the view options (<kbd>N</kbd>) I activate Display -> Shadeless because I don't want blenders ugly shading but fullbright instead. I split the window and also open a UV-Image-Editor view and activiate the options side-bar (<kbd>N</kbd>). Under image there is the texture file and you can press the refresh button next to it to reload the texture. Blender can read PSD files and krita and gimp can also work with them. PSD files preserve layers and thats how this all becomes comfortable. Paint a little, save, press refresh in blender, repeat.
+I paint exclusively in the 2d software but I need to constantly check the 3d model if everything is right. To do this comfortably I have blender on the 2nd monitor (or in the background). I use "3D View Full" as the screenlayout to get rid of the grid and stuff. In the view options <kbd>N</kbd> I activate Display -> Shadeless because I don't want blenders ugly shading but fullbright instead. I split the window and also open a UV-Image-Editor view and activiate the options side-bar <kbd>N</kbd>. Under image there is the texture file and you can press the refresh button next to it to reload the texture. Blender can read PSD files and krita and gimp can also work with them. PSD files preserve layers and thats how this all becomes comfortable. Paint a little, save, press refresh in blender, repeat.
 
 ![Blender Reload Texture]({filename}/images/mdltut/reload_tex.png)
 
