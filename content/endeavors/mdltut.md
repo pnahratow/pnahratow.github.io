@@ -22,8 +22,9 @@ I'm a hobbyist and learned most of this as I went along. Aside from the part abo
 * [Taniwha's mdl exporter](http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl) - for exporting to mdl format
 * [Krita](http://krita.org) - for digital painting
 * [Fteqcc](http://fte.triptohell.info/ftedownloads/) - for compiling quakec
-* [QuakeC v1.06 Base](http://www.moddb.com/games/quake/downloads/quake-c-version-106) -  as a codebase for quakec
-* [Slade3](http://slade.mancubus.net/) -  for exploring quake1 pak files
+* [QuakeC v1.06 Base](http://www.moddb.com/games/quake/downloads/quake-c-version-106) - as a codebase for quakec
+* [Slade3](http://slade.mancubus.net/) - for exploring quake1 pak files
+* [Trenchbroom](http://kristianduske.com/trenchbroom/) - for editing quake levels
 
 # Creating The Model
 
@@ -49,7 +50,7 @@ Again by Darrin Lile [UV Mapping](https://www.youtube.com/playlist?list=PLyelx0T
 
 The tutorial talks a bit about stretching and seam placement. One thing I would add to that would be to keep in mind that you want to paint the texture later. When you use blenders 3d painting tools this is less of a problem. But in an imageeditor some seams are very hard to fix. Try to make seams straight lines where possible because that is easily to hide by copying/mirroring. Also try to maintain recognizable shapes. When painting one tends to stick to how he/she would do it in a drawing. Stretches and forms that only look good on the model but are weird on the texturemap are hard to paint. Usually the painted texturemap should look cool by itself. 
 
-## Applying the image texture
+## Applying The Image Texture
 
 Blender has different renderers and applying texture has something to do with materials which are defined differently for these renderers. I didn't care to learn much about this. Just know that the MDL exporter expects the texture to be at a specific place when exporting. To achieve this try to drag'n'drop your image file from you file explorer onto the object in blender. I don't know what magic happens there but it just worked and I didn't want to think about it more than this.
 
@@ -151,6 +152,7 @@ Some things to note
 * Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake
 * The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation.
 * Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.
+* The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously.
 
 # Exporting To MDL
 
@@ -158,11 +160,9 @@ This step is pretty easy because the MDL exporter by Bill Currie (taniwha) is aw
 
 ## The Quake Palette
 
-Quake 1 textures have only 256 colors.
-
 ![Quake color palette]({filename}/images/quake_pal.png)
 
-Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
+Quake 1 textures have only 256 colors. Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
 
 Blender plugins are written in python so you'll only need a text editor. The plugin consists of a couple of *.py files in a zip. Unzip. Open quakepal.py. Comment out the last 32 entries in this set by putting a hash sign (#) in front of them. Save and zip the whole thing again. Reinstall the plugin.
 
@@ -177,6 +177,33 @@ This way the plugin won't consider the last 32 color anymore when finding the cl
 
 ## Scale, Location and Rotation
 
+* The mdl exporter translates blender units to quake units 1:1. This means that quake models are giant behemoths in blender. Import an original quake model into your scene and scale your model so it looks good in comparison. Also you should keep the hit/hurt boxes of the enemies in mind. I don't know the specifics of it yet but I think it's the same box you see in a leveleditor when placing monsters. They are usually power of 2 boxes like 32x32 and I think you can also influence this in quakec. With my model I just sticked with the original dog/rottweiler monster and scaled my model so it fits that box.
+* The floor in quake is at -24 units. Create a plane at -24 and move your model so it nicely stands on this plane.
+* If you import an original mdl into blender you'll see it facing in an other direction by 90°. You should do this to your model too but maybe only after animating if you want to use the X-Mirror tool while animating.
+* Lastly. Scale, location and rotation shouldn't be properties of the object. The object should have a scale of 1, rotation of 0° and location of 0 on all axis. If thats not the case press <kbd>CTRL</kbd>+<kbd>A</kbd>->Location and <kbd>CTRL</kbd>+<kbd>A</kbd>->Rotation&Scale to transfer these values to the mesh.
+
+## Directory Structure
+
+Since the new model will have model, sound and code it essentially becomes a quake mod. Mods get their own directory in your quake installation and you will have to start quake with `-game <yourdirectory>` commandline arguments. Check out other quake mods for directory and naming conventions. The mdl file usually goes in the progs directory.
+
+## Level Editor
+
+I use trenchbroom as the quake level editor. To use a new model in there you will need an entity definiton. Trenchbroom reads .fgd and .def files and comes with a standard quake entity definition .fgd file in its resource directory. Copy that and add your own entity defintion to this. It will look something like this.
+
+    @PointClass base(Monster) size(-32 -32 -24, 32 32 40) model(":progs/mon_knut.mdl") = mon_knut : "Nasty Manbearpig" []
+
+Size defines the bounding box. Model defines the model that is shown in the editor. The string after the = defines the entity spawn function that will be called when quake loads the map.
+
+To add your .fgd file in trenchbroom got to the inspector on the right. At the bottom of the entity tab you can use external .fgd files. At the bottom of the map tab you can activate mods directories to be read.
+
 # QuakeC
 
-https://tomeofpreach.wordpress.com/qexpo-tutorial/
+Having experience in programming will help but if you made it here you probably don't care and are willing to learn whatever is necessary. Which is good because programming is fun.
+
+## Setup
+
+You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my `PATH` environment variable and call it using `qcc` anywhere). When you run the compiler it looks for a file named `progs.src`. It then compiles every quakec file listed there in order and creates the resultfile `PROGS.DAT` in the parent directory (which should be the root directory of your mod). When you start quake with the `-game <yourdirectory>` parameter quake will read your `PROGS.DAT` instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where [the fun starts](http://www.insideqc.com/qctut/).
+
+## Monster Code
+
+[Tutorial by Preach](https://tomeofpreach.wordpress.com/qexpo-tutorial/)
