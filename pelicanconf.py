@@ -7,14 +7,24 @@ SITENAME = "flp's website"
 SITEURL = ''
 
 PATH = 'content'
-
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
+DEFAULT_DATE_FORMAT =('%d-%m-%Y')
 
 # my settings
 THEME = "theme/pelican-bold"
 MD_EXTENSIONS = ['codehilite(css_class=highlight,linenums=False)','toc']
+
+STATIC_PATHS = [
+    'images', 
+    'extra/robots.txt', 
+    'extra/favicon.ico'
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -27,11 +37,12 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),                                                                                                                                                                                                                                
          ('Python.org', 'http://python.org/'),                                                                                                                                                                                                                                 
          ('Jinja2', 'http://jinja.pocoo.org/'),                                                                                                                                                                                                                                
-         ('You can modify those links in your config file', '#'),)                                                                                                                                                                                                             
+        )                                                                                                                                                                                                             
                                                                                                                                                                                                                                                                                
 # Social widget                                                                                                                                                                                                                                                                
 SOCIAL = (('github', 'https://github.com/pnahratow'),                                                                                                                                                                                                                          
-        ('mail', 'mailto:philippnahratow@gmail.com'))      
+          ('mail', 'mailto:philippnahratow@gmail.com')
+         )      
 
 DEFAULT_PAGINATION = 20
 

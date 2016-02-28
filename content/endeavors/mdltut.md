@@ -220,4 +220,4 @@ Of course defining animations isn't the end of it. For the whole behaviour part 
 
 I hope you did get good infomation out of this tutorial and I wish you good look realizing your project.
 
-![Imgame screenshot]({filename}/images/mdltut/ingame.png)
+![In-game screenshot]({filename}/images/mdltut/ingame.png)
