@@ -105,7 +105,7 @@ I attack the empty texture with this basic arsenal until I'm happy with what I s
 
 ### Basic Shading Progression
 
-PLACEHOLDER: I didn't think of saving a lot of work-in-progress stages with this texture. I will put a series of progression images here next time around.
+I made a [timelapse video of my texturing workflow]({filename}/endeavors/texworkflow.md) for another model.
 
 ### 2d-3d Back And Forth
 
