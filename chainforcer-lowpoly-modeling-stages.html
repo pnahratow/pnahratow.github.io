@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>flp's website | Chainforcer Lowpoly Modeling Stages</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <link rel="stylesheet" type="text/css" href="http://pnahratow.github.io/theme/css/base.css" />
+        <meta name="author" value="Philipp Nahratow" />
+        <meta name="description" value="While working on this model I saved several in between backups. These screenshots show the stages the model went through. Concept / Viewport Background The basic character concept and also essential viewport backgrounds that will define the form. Both views contain different information on one axis but the same on the ..." />
+        <meta name="keywords" value="gaming" />
+    </head>
+    <body>
+        <header class="site highlight">
+                <h1 class="stamp lrot"></h1>
+        </header>
+        <div class="site clearfix">
+<nav class="lfloat">
+    <ul class="links">
+    <li class="active">
+        <a class="stamp" href="http://pnahratow.github.io/category/endeavors.html">endeavors</a>
+    </li>
+    <li>
+        <a  href="http://pnahratow.github.io/category/misc.html">misc</a>
+    </li>
+            <li>
+                <a href="http://pnahratow.github.io/pages/about.html">About</a>
+            </li>
+    </ul>
+    <ul class="social rfloat">
+        <li><a title="github" href="https://github.com/pnahratow"></a></li>
+    </ul>
+</nav>            <section class="content">
+                <h1 class="stamp">Chainforcer Lowpoly Modeling Stages</h1>
+                    <a href="http://pnahratow.github.io/feeds/endeavors.atom.xml" class="feed"><img src="/theme/images/icons/rss.png"/></a>
+                <div class="body">
+<article>
+    <footer>
+        <ul class="socialbtn">
+            <li></li>
+            <li></li>
+        </ul>
+        2016-03-11
+        <address>
+            <a href="http://pnahratow.github.io/author/philipp-nahratow.html">Philipp Nahratow</a>
+        </address>
+
+<ul class="tags"><lh>tags:</lh><li><a href="http://pnahratow.github.io/tag/gaming.html">gaming</a></li></ul>    </footer>
+
+    <div class="content">
+        <p><img alt="Chainforcer model" src="http://pnahratow.github.io/images/modprog/title_pose.png" /></p>
+<p>While working on this model I saved several in between backups. These screenshots show the stages the model went through.</p>
+<h2 id="concept-viewport-background">Concept / Viewport Background</h2>
+<p>The basic character concept and also essential viewport backgrounds that will define the form. Both views contain different information on one axis but the same on the vertical axis. To use this as viewport backgrounds I made sure the landmarks on the vertical axis are on the same height. That's why there are these lines.</p>
+<p><img alt="Chainforcer model" src="http://pnahratow.github.io/images/modprog/00_background.png" /></p>
+<h2 id="blenders-skin-modifier">Blender's Skin Modifier</h2>
+<p>The basic form is created using a combination of blender modifiers (mirror, skin, subdivison). You can see a thin line inside the model. Thats what's manually defined. The actual hull is what the skinmodifier does. It creates a hull mesh around verts and edges. Geometry will be added when verts move apart. The volume increases when verts are scaled. The geometry isn't optimal but I think it still saves time since I only had to define 13 vertices to get this basic shape.</p>
+<p><img alt="Skin modifier" src="http://pnahratow.github.io/images/modprog/01_skinmod.png" />
+<img alt="Skin modifier with arms" src="http://pnahratow.github.io/images/modprog/02_skinmod_w_arms.png" /></p>
+<h2 id="refining">Refining</h2>
+<ul>
+<li>Started with the boots by moving the verts from all angles so they align with the background images.</li>
+</ul>
+<p><img alt="Boot progress" src="http://pnahratow.github.io/images/modprog/03_progress_boot.png" /></p>
+<ul>
+<li>Removed some unneccessary edges to have about even poly density.</li>
+</ul>
+<p><img alt="Less geometry" src="http://pnahratow.github.io/images/modprog/04_less_geometry.png" /></p>
+<ul>
+<li>I noticed some triangles in the geometry and removed them by adding edge loops.</li>
+</ul>
+<p><img alt="Better topology" src="http://pnahratow.github.io/images/modprog/05_better_topo.png" /></p>
+<ul>
+<li>Gradually touching all vertices to define the form.</li>
+</ul>
+<p><img alt="Defining general shape" src="http://pnahratow.github.io/images/modprog/06_getting_in_shape.png" /></p>
+<ul>
+<li>Some more form definiton on the hips and head.</li>
+</ul>
+<p><img alt="Hip and head details" src="http://pnahratow.github.io/images/modprog/07_hip_head_detail.png" /></p>
+<ul>
+<li>Extruded the belly plate and arm ammo packs. Also defined the shoulder/glove transition.</li>
+</ul>
+<p><img alt="Plate and glove details" src="http://pnahratow.github.io/images/modprog/08_plate_glove_detail.png" /></p>
+<ul>
+<li>Create the leg ammo packs and face indentation using the extrude tool.</li>
+</ul>
+<p><img alt="Visor and legammo details" src="http://pnahratow.github.io/images/modprog/09_shade_legpacks_detail.png" /></p>
+<h2 id="done">Done</h2>
+<ul>
+<li>Finally removed edgeloops that don't add much to the form to reduce polycount.</li>
+</ul>
+<p><img alt="Done backside" src="http://pnahratow.github.io/images/modprog/10_done_backside.png" />
+<img alt="Done frontside" src="http://pnahratow.github.io/images/modprog/11_done_frontside.png" /></p>
+<ul>
+<li>Added a weapon (chainsaw-grenade-launcher) and a "muzzle flash"</li>
+</ul>
+<p><img alt="With weapon" src="http://pnahratow.github.io/images/modprog/12_with_weapon.png" /></p>
+<h2 id="uv-mapping">UV Mapping</h2>
+<ul>
+<li>This is how the model was cut for uv mapping. The red edges mark uv seams.</li>
+</ul>
+<p><img alt="UV cuts and seams" src="http://pnahratow.github.io/images/modprog/13_cut_and_seam.png" /></p>
+<ul>
+<li>Here the resulting UV map. I aligned some of the seam vertices to make hiding them easier later. Unwrapping option was set to "conformal" most of the time.</li>
+</ul>
+<p><img alt="UV map" src="http://pnahratow.github.io/images/modprog/15_uv_map.png" />
+<img alt="Testmap on model" src="http://pnahratow.github.io/images/modprog/14_test_uv.png" /></p>
+    </div><!-- /.entry-content -->
+
+    <div class="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_identifier = "chainforcer-lowpoly-modeling-stages.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://flpswebsite.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+    </div>
+
+</article>
+                </div>
+            </section>
+ <footer class="site clearfix bs">
+    <section class="lfloat">
+        <ul>
+            <lh>categories</lh>
+            <li><a href="http://pnahratow.github.io/category/endeavors.html">endeavors</a></li>
+            <li><a href="http://pnahratow.github.io/category/misc.html">misc</a></li>
+        </ul>
+    </section>
+    <section class="lfloat">
+        <ul>
+            <lh>pages</lh>
+            <li><a href="http://pnahratow.github.io/pages/about.html">About</a></li?
+        </ul>
+    </section>
+    <section class="rfloat">
+    <small>
+        <p>site generated by <a href="https://github.com/getpelican/pelican">pelican</a></p>
+        <p>theme forked from <a href="https://github.com/demianbrecht">demian brecht</a></p>
+    </small>
+    </section>
+</footer>        </div>
+    </body>
+</html>
