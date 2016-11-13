@@ -6,4 +6,6 @@ Date: 2016-02-10
 
 Hello my name is Philipp.
 
-I'm interested in computer science, development and retro gaming. This site will mainly consist of post-mortems and tutorials on things I spend my free time with.
+I'm interested in computer science, development and retro gaming. 
+
+This site will mainly consist of post-mortems and tutorials on things I spend my free time with.
