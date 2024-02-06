@@ -1,32 +1,12 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
-
 AUTHOR = 'Philipp Nahratow'
 SITENAME = "flp's website"
-SITEURL = ''
+SITEURL = ""
 
-PATH = 'content'
+PATH = "content"
+
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = 'en'
-DEFAULT_DATE_FORMAT =('%Y-%m-%d')
-
-# my settings
-THEME = "theme/pelican-bold"
-MD_EXTENSIONS = ['codehilite(css_class=highlight,linenums=False)','toc']
-
-STATIC_PATHS = [
-    'images', 
-    'extra/robots.txt', 
-    'extra/favicon.ico'
-]
-EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
-}
-
-DISQUS_SITENAME = "flpswebsite"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -35,20 +15,50 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll                                                                                                                                                                                                                                                                     
-LINKS = (('Pelican', 'http://getpelican.com/'),                                                                                                                                                                                                                                
-         ('Python.org', 'http://python.org/'),                                                                                                                                                                                                                                 
-         ('Jinja2', 'http://jinja.pocoo.org/'),                                                                                                                                                                                                                                
-        )                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                               
-# Social widget                                                                                                                                                                                                                                                                
-SOCIAL = (('github', 'https://github.com/pnahratow'),                                                                                                                                                                                                                          
-          # ('mail', 'mailto:philippnahratow@gmail.com')
-         )      
+LINKS = (
+    ("projects", "../category/projects"),
+)
+
+# Social widget
+SOCIAL = (
+    ('github', 'https://github.com/pnahratow'),
+)
 
 DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
-PLUGINS = ['extended_sitemap']
+# my additional settings
+DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
+
+MARKDOWN = {
+    "extension_configs": {
+        # Needed for code syntax highlighting
+        "markdown.extensions.codehilite": {"css_class": "highlight,linenums=False"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        # This is for enabling the TOC generation
+        "markdown.extensions.toc": {"title": "Table of Contents"},
+    },
+    "output_format": "html5",
+}
+
+STATIC_PATHS = [
+    'images',
+    'extra/robots.txt',
+    'extra/favicon.ico'
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+
+PLUGINS = []
+
+THEME = "../pelican-themes/Flex"
+SITETITLE = SITENAME
+SITESUBTITLE = "Dem stuffs"
+HOME_HIDE_TAGS = True
+DISQUS_SITENAME = "flpswebsite"

@@ -8,7 +8,7 @@ Tags: gaming
 
 This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I've learned.
 
-![Image of monster model]({filename}/images/mdltut/mon_knut.png)
+![Image of monster model]({static}/images/mdltut/mon_knut.png)
 
 I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.
 
@@ -36,19 +36,19 @@ There is alot to learn about blender and I haven't really scratched the surface 
 
 Aside from that I would urge you to visit the [Youtube Channel of Darrin Lile](https://www.youtube.com/user/DarrinLile) because thats where I learned what I wanted in an enjoyable and easy to grasp manner.
 
-![Plain model]({filename}/images/mdltut/plain_model.png)
+![Plain model]({static}/images/mdltut/plain_model.png)
 
 # Creating The UV Map
 
 In order to paint the texture the model needs to be unwrapped. Which means the models needs information about how a 2d image would be applied to the 3d polygons to be its texture. A result of this looks something like this.
 
-![UV Maps example]({filename}/images/mdltut/uv_map.png)
+![UV Maps example]({static}/images/mdltut/uv_map.png)
 
 Again by Darrin Lile [UV Mapping](https://www.youtube.com/playlist?list=PLyelx0TsmSpfZRCzf9qDFn4XOPZqH0rQp) you can pretty much follow this tutorial exactly.
 
 ## Seams, Stretching and Shapes
 
-The tutorial talks a bit about stretching and seam placement. One thing I would add to that would be to keep in mind that you want to paint the texture later. When you use blenders 3d painting tools this is less of a problem. But in an imageeditor some seams are very hard to fix. Try to make seams straight lines where possible because that is easily to hide by copying/mirroring. Also try to maintain recognizable shapes. When painting one tends to stick to how he/she would do it in a drawing. Stretches and forms that only look good on the model but are weird on the texturemap are hard to paint. Usually the painted texturemap should look cool by itself. 
+The tutorial talks a bit about stretching and seam placement. One thing I would add to that would be to keep in mind that you want to paint the texture later. When you use blenders 3d painting tools this is less of a problem. But in an imageeditor some seams are very hard to fix. Try to make seams straight lines where possible because that is easily to hide by copying/mirroring. Also try to maintain recognizable shapes. When painting one tends to stick to how he/she would do it in a drawing. Stretches and forms that only look good on the model but are weird on the texturemap are hard to paint. Usually the painted texturemap should look cool by itself.
 
 ## Applying The Image Texture
 
@@ -74,7 +74,7 @@ Photoshop is great but expensive. Gimp is great but also not. I recently tried K
 
 A tool to lay down paint. I use only one because I'm not very experienced and don't know how to handle the many presets there are. I know how to use a real pencil and thats why I fiddle with the brush settings until I can comfortably create this gradienty kind of thing in one stroke.
 
-![A painted gradient]({filename}/images/mdltut/brush_gradient.png)
+![A painted gradient]({static}/images/mdltut/brush_gradient.png)
 
 Here are a couple of tips to get this
 
@@ -87,9 +87,9 @@ Here are a couple of tips to get this
 
 ### Smudger
 
-Literally satan. Having hard edges is a thing that makes stuff look crisp. It's why I use a hard brush to paint. Blurry brushstrokes is one of the most common things that makes beginner artwork look bad. Still I use this tool. Most of the time when evening out too harsh highlights like this. 
+Literally satan. Having hard edges is a thing that makes stuff look crisp. It's why I use a hard brush to paint. Blurry brushstrokes is one of the most common things that makes beginner artwork look bad. Still I use this tool. Most of the time when evening out too harsh highlights like this.
 
-![A smudged highlight]({filename}/images/mdltut/smudge_hl.png)
+![A smudged highlight]({static}/images/mdltut/smudge_hl.png)
 
 This brush is 2-4px wide and at 20-40% strength.
 
@@ -97,27 +97,27 @@ This brush is 2-4px wide and at 20-40% strength.
 
 A big round brush with soft edges and very low opacity. I use this to create soft gradients or to apply color lighly without disrupting anything. Usually in a situation where I have a selection and then use the side of the brush like this.
 
-![Application for soft brushes]({filename}/images/mdltut/softbrush_appl.png)
+![Application for soft brushes]({static}/images/mdltut/softbrush_appl.png)
 
 ## Workflow and Tips
 
-I attack the empty texture with this basic arsenal until I'm happy with what I see. At this point I feel like a crazy person running in circles hoping for something good to happen. All the brushstrokes are bad. Colors look off or boring but I know it gets better when I invest more time so I keep at it. I can't say much about this but other people can. Check out youtube for people who post about general digital art like [Sycra](https://www.youtube.com/user/Sycra). I'm sure you can find many more. 
+I attack the empty texture with this basic arsenal until I'm happy with what I see. At this point I feel like a crazy person running in circles hoping for something good to happen. All the brushstrokes are bad. Colors look off or boring but I know it gets better when I invest more time so I keep at it. I can't say much about this but other people can. Check out youtube for people who post about general digital art like [Sycra](https://www.youtube.com/user/Sycra). I'm sure you can find many more.
 
 ### Basic Shading Progression
 
-I made a [timelapse video of my texturing workflow]({filename}/endeavors/texworkflow.md) for another model.
+I made a [timelapse video of my texturing workflow]({filename}/projects/texworkflow.md) for another model.
 
 ### 2d-3d Back And Forth
 
 I paint exclusively in the 2d software but I need to constantly check the 3d model if everything is right. To do this comfortably I have blender on the 2nd monitor (or in the background). I use "3D View Full" as the screenlayout to get rid of the grid and stuff. In the view options <kbd>N</kbd> I activate Display -> Shadeless because I don't want blenders ugly shading but fullbright instead. I split the window and also open a UV-Image-Editor view and activiate the options side-bar <kbd>N</kbd>. Under image there is the texture file and you can press the refresh button next to it to reload the texture. Blender can read PSD files and krita and gimp can also work with them. PSD files preserve layers and thats how this all becomes comfortable. Paint a little, save, press refresh in blender, repeat.
 
-![Blender Reload Texture]({filename}/images/mdltut/reload_tex.png)
+![Blender Reload Texture]({static}/images/mdltut/reload_tex.png)
 
 ### Double Resolution
 
 My brushstrokes are wonky and I don't know how to do close-up pixel pushing. What I do to help with that is paint the texture in twice the resolution. If the target texture is 256x256px I paint in 512x512px. The downscaling in the end smooths out some of the irregularities. Lazily done gradients become smooth and some mistakes disappear. However the whole image becomes blurry and looses contrast too. To help with that there is a filter called "Unsharp Mask" (look under sharpen or enhance). Use with low values. The image below shows how to get some of the crispness back with this filter.
 
-![Unsharp Mask filter result]({filename}/images/mdltut/unsharp_mask.png)
+![Unsharp Mask filter result]({static}/images/mdltut/unsharp_mask.png)
 
 ### Blending Modes
 
@@ -135,7 +135,7 @@ The keyword here is inverse kinematics and I can only point you to videos by Dar
 
 At the time of writing he is uploading a simplyfied method for humanoid models which should be interesting [here](https://www.youtube.com/playlist?list=PLyelx0TsmSpfi0fZpJGqdW9IAmrY-iDQR).
 
-![Bone rig]({filename}/images/mdltut/bone_rig.png)
+![Bone rig]({static}/images/mdltut/bone_rig.png)
 
 # Animation
 
@@ -160,7 +160,7 @@ This step is pretty easy because the MDL exporter by Bill Currie (taniwha) is aw
 
 ## The Quake Palette
 
-![Quake color palette]({filename}/images/mdltut/quake_pal.png)
+![Quake color palette]({static}/images/mdltut/quake_pal.png)
 
 Quake 1 textures have only 256 colors. Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
 
@@ -177,7 +177,7 @@ This way the plugin won't consider the last 32 color anymore when finding the cl
 
 This is how the texture looks after the palette conversion. You can see some artifacts in the gradients which makes it look like its 1996.
 
-![Texture after conversion]({filename}/images/mdltut/after_quakepal.png)
+![Texture after conversion]({static}/images/mdltut/after_quakepal.png)
 
 ## Scale, Location and Rotation
 
@@ -200,7 +200,7 @@ Size defines the bounding box. Model defines the model that is shown in the edit
 
 To add your .fgd file in trenchbroom got to the inspector on the right. At the bottom of the entity tab you can use external .fgd files. At the bottom of the map tab you can activate mods directories to be read.
 
-![Trenchbroom screenshot]({filename}/images/mdltut/trenchbroom.png)
+![Trenchbroom screenshot]({static}/images/mdltut/trenchbroom.png)
 
 # QuakeC
 
@@ -220,4 +220,4 @@ Of course defining animations isn't the end of it. For the whole behaviour part 
 
 I hope you did get good infomation out of this tutorial and I wish you good look realizing your project.
 
-![In-game screenshot]({filename}/images/mdltut/ingame.png)
+![In-game screenshot]({static}/images/mdltut/ingame.png)
