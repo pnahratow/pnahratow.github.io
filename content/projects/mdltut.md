@@ -12,14 +12,6 @@ This is kind of a tutorial/gathering of infomation about creating a model (speci
 
 I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.
 
-## Update 2024
-
-I have replaced a couple of dead links.
-
-- Blender MDL plugin
-- Fteqcc link
-- UV Mapping Playlist
-
 
 # Index
 

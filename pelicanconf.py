@@ -43,6 +43,15 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
+MARKDOWN = {
+    "extension_configs": {
+        # This is for enabling the TOC generation
+        "markdown.extensions.toc": {"title": "Table of Contents"},
+    },
+    "output_format": "html5",
+}
+
+
 PLUGINS = []
 
 THEME = "Flex"
