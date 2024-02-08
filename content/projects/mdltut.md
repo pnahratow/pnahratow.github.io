@@ -12,6 +12,15 @@ This is kind of a tutorial/gathering of infomation about creating a model (speci
 
 I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.
 
+## Update 2024
+
+I have replaced a couple of dead links.
+
+- Blender MDL plugin
+- Fteqcc link
+- UV Mapping Playlist
+
+
 # Index
 
 [TOC]
@@ -19,9 +28,10 @@ I'm a hobbyist and learned most of this as I went along. Aside from the part abo
 # Software
 
 * [Blender](http://blender.org) - for 3d modeling
-* [Taniwha's mdl exporter](http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl) - for exporting to mdl format
+* ~~[Taniwha's mdl exporter](http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl) - for exporting to mdl format~~
+* [Quake MDL import/export plugin for Blender](https://bitbucket.org/khreathor/mdl-for-blender/wiki/Home) - for exporting to mdl format
 * [Krita](http://krita.org) - for digital painting
-* [Fteqcc](http://fte.triptohell.info/ftedownloads/) - for compiling quakec
+* [Fteqcc](https://www.fteqcc.org/) - for compiling quakec
 * [QuakeC v1.06 Base](http://www.moddb.com/games/quake/downloads/quake-c-version-106) - as a codebase for quakec
 * [Slade3](http://slade.mancubus.net/) - for exploring quake1 pak files
 * [Trenchbroom](http://kristianduske.com/trenchbroom/) - for editing quake levels
@@ -44,7 +54,7 @@ In order to paint the texture the model needs to be unwrapped. Which means the m
 
 ![UV Maps example]({static}/images/mdltut/uv_map.png)
 
-Again by Darrin Lile [UV Mapping](https://www.youtube.com/playlist?list=PLyelx0TsmSpfZRCzf9qDFn4XOPZqH0rQp) you can pretty much follow this tutorial exactly.
+Again by Darrin Lile: [Blender Character UV Mapping](https://youtube.com/playlist?list=PLyelx0TsmSpdQwcx1OloZuW48bOUJQ02s&si=z-NWbs_v2odMHITa) you can pretty much follow this tutorial exactly.
 
 ## Seams, Stretching and Shapes
 
@@ -121,19 +131,20 @@ My brushstrokes are wonky and I don't know how to do close-up pixel pushing. Wha
 
 ### Blending Modes
 
-Learn about blending modes regarding brushes and layers. There are cool light effects like rimlights, neon glow, fire and subsurface scattering and all those flashy things. They look great on textures. Blending modes help with this. You should become familiar with multiply, screen/lighten, dodge, burn and overlay. Check out this [Video](https://www.youtube.com/watch?v=AybFWViT-3Q).
+Learn about blending modes regarding brushes and layers. There are cool light effects like rimlights, neon glow, fire and subsurface scattering and all those flashy things. They look great on textures. Blending modes help with this. You should become familiar with multiply, screen/lighten, dodge, burn and overlay. Check out this video: [Painting with Blending-modes
+](https://www.youtube.com/watch?v=AybFWViT-3Q).
 
 ### Use More Colors
 
-A quick thing on colors. If you experience the problem that your skintones look dull or off. Check out this [Video](https://www.youtube.com/watch?v=PPdkEEYo3F0).
+A quick thing on colors. If you experience the problem that your skintones look dull or off. Check out this video: [How to Paint Realistic Skin Tones](https://www.youtube.com/watch?v=PPdkEEYo3F0).
 
 # Rigging
 
 Rigging means preparing the model in a way that makes it easy to pose the model. Usually by applying some kind of virtual bone structure where you can move hands or feet in 3d space and the other joints move in some realistic manner too which saves you time.
 
-The keyword here is inverse kinematics and I can only point you to videos by Darrin Lile again. [This one](https://www.youtube.com/watch?v=Q2MGttB1E7U&list=PLyelx0TsmSpf-8xZfjZveokSsIwj0F3lo&index=22) and following explain the manual process defining bones and their properties and it's the method I used.
+The keyword here is inverse kinematics and I can only point you to videos by Darrin Lile again. [Blender Character Rigging](https://www.youtube.com/watch?v=Q2MGttB1E7U&list=PLyelx0TsmSpf-8xZfjZveokSsIwj0F3lo&index=22) and following explain the manual process defining bones and their properties and it's the method I used.
 
-At the time of writing he is uploading a simplyfied method for humanoid models which should be interesting [here](https://www.youtube.com/playlist?list=PLyelx0TsmSpfi0fZpJGqdW9IAmrY-iDQR).
+A way easier approach for is using Blenders riggify addon. See [Rigify Made Easy](https://www.youtube.com/watch?v=PKPo0-leJmU). Which makes it easy because there a predefined skeletons you can use by just aligning the joints with your model and pressing "Generate Rig".
 
 ![Bone rig]({static}/images/mdltut/bone_rig.png)
 
@@ -143,41 +154,50 @@ Now this again is a topic that dabbles in the domain of art. Animation is hard a
 
 I used keyframe animation which is a technique where you define the distinct poses that appear in the animation you want to make and the software (blender) does the job of interpolating the in-between states that appear.
 
+Some tips
+
+- Identify **extreme poses** in your animation, pose them and set full character keyframes at those points. Then define the inbetween stages afterwards. Just going from left to right sometimes causes headaches and this bisecting approach usually works better.
+- **Make animations loopable**. There are two ideas here. Either you loop into the first frame of your animation so that the animations itself loop well. You can do this like this: When you are almost done with one animation copy the pose of the first frame of the current animation and paste it somewhere after your last keyframe. Then go back and find a good "almost there" pose and copy this as your actual last frame of the animation. This way you are blending into the loop. Another approach is to **blend into your characters primary animation** which usually is the run cycle. Do the same as before just use the first frame of your run cycle as the base.
+
 I made an in-game [youtube video](https://youtu.be/sDa8cVHDhP4) of my final model. At around 00:46 you can see all the animations that the model uses.
 
-This is a part I will have to learn alot about too. For the technicalities I can again refer you to [Darrin Lile](https://www.youtube.com/playlist?list=PLyelx0TsmSpfoqyS2sBZvsuIL5av5DkJu) other than that you'll have to trial-and-error yourself through this. Which is what I did too.
+This is a part I will have to learn alot about too. For the technicalities I can again refer you to [Blender Character Animation](https://www.youtube.com/playlist?list=PLyelx0TsmSpfoqyS2sBZvsuIL5av5DkJu) other than that you'll have to trial-and-error yourself through this. Which is what I did too.
 
 Some things to note
 
 * Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake
-* The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation.
+* The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation. Another more explicit way to do this is by using the menu *Pose -> Animation -> Insert Keyframe -> Whole Character*
 * Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.
 * The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously.
 
 # Exporting To MDL
 
-This step is pretty easy because the MDL exporter by Bill Currie (taniwha) is awesome and does everthing for you. Note that animation is exported from frame 1 to the frame you have currently selected.
+This step is pretty easy because the MDL exporter does everthing for you. Note that animation is exported from frame 1 to the frame you have currently selected.
+
+Check this video [MDL for Blender 2.8 - Common Problems, Quirks and Solutions
+](https://www.youtube.com/watch?v=nZC-G9Tz6OM) to get some more detailed information.
 
 ## The Quake Palette
 
 ![Quake color palette]({static}/images/mdltut/quake_pal.png)
 
-Quake 1 textures have only 256 colors. Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture. To get rid of this you can edit the exporter a bit.
+https://quakewiki.org/wiki/Quake_palette
 
-Blender plugins are written in python so you'll only need a text editor. The plugin consists of a couple of *.py files in a zip. Unzip. Open quakepal.py. Comment out the last 32 entries in this set by putting a `#` in front of them. Save and zip the whole thing again. Reinstall the plugin.
-
-    :::python
-        ...
-        # (0xff, 0xf7, 0xc7),
-        # (0xff, 0xff, 0xff),
-        # (0x9f, 0x5b, 0x53),
-    )
-
-This way the plugin won't consider the last 32 color anymore when finding the closest color match and your texture will be evenly lit.
+Quake 1 textures have only 256 colors. Luckily this is something the mdl exporter does take care of too. It finds the closest color match for each pixel of your texture and converts the image this way. However there is one thing to be wary of. The last 32 color in this palette are fullbright colors. In-game quake does manipulate your texture color according to the current light value. But not the last 32 colors. These colors are there for various lights or fire that stay fully lit no matter where they are. An inconvenient sideeffect of this is that the mdl exporter might interpret some of your texture's colors as these fullbright colors and you'll get some weirdly lit pixels in your texture.
 
 This is how the texture looks after the palette conversion. You can see some artifacts in the gradients which makes it look like its 1996.
 
 ![Texture after conversion]({static}/images/mdltut/after_quakepal.png)
+
+### Palette conversion and Dithering
+
+As you can see there are some nasty jumps in the gradient there. To avoid this and also the issue with the fullbright colors you can take care of the color conversion manually. For this you can use Krita using the *Map -> Palettelize* filter. There you have a bunch of options to make it look good. You can also use a dedicated tool like [SLK-img2pixel](https://captain4lk.itch.io/slk-img2pixel).
+
+![Palette conversion comparison]({static}/images/mdltut/dither_comp.png)
+
+In the example above you can see the result of the exporter on the left and on the right I used SLK-img2pixel. You can see the it all looks much nicer. If you zoom in you can also see the familiar dithering patterns from ancient times.
+
+To avoid the fullbright issue you just use a reduced palette for the conversion.
 
 ## Scale, Location and Rotation
 
@@ -209,6 +229,8 @@ Having experience in programming will help but if you made it here you probably 
 ## Setup
 
 You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my `PATH` environment variable and call it using `qcc` anywhere). When you run the compiler it looks for a file named `progs.src` in the current directory. It then compiles every quakec file listed there in order and creates the resultfile `PROGS.DAT` in the parent directory (which should be the root directory of your mod). When you start quake with the `-game <yourdirectory>` parameter quake will read your `PROGS.DAT` instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where [the fun starts](http://www.insideqc.com/qctut/).
+
+* [QuakeC Reference Manual](https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf)
 
 ## Coding
 
