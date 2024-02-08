@@ -1,0 +1,7 @@
+- remove quotes from subtitle
+- fix strikethrough on old mdl exporter
+- update shadeless viewport for current blender
+- make <kbd> tag work again
+- fix code highlighting
+- possibly remove flex theme from branch
+- fix or remive disqus
