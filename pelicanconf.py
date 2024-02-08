@@ -21,7 +21,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('github', 'https://github.com/pnahratow'),
+    # ('github', 'https://github.com/pnahratow'),
 )
 
 DEFAULT_PAGINATION = 20
@@ -31,18 +31,6 @@ DEFAULT_PAGINATION = 20
 
 # my additional settings
 DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
-
-MARKDOWN = {
-    "extension_configs": {
-        # Needed for code syntax highlighting
-        "markdown.extensions.codehilite": {"css_class": "highlight,linenums=False"},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.meta": {},
-        # This is for enabling the TOC generation
-        "markdown.extensions.toc": {"title": "Table of Contents"},
-    },
-    "output_format": "html5",
-}
 
 STATIC_PATHS = [
     'images',
@@ -57,8 +45,12 @@ EXTRA_PATH_METADATA = {
 
 PLUGINS = []
 
-THEME = "../pelican-themes/Flex"
+THEME = "Flex"
 SITETITLE = SITENAME
-SITESUBTITLE = "Dem stuffs"
+SITELOGO = "/images/about/baseogre_avatar.png"
+SITESUBTITLE = '"I like big pixels and I cannot lie"'
 HOME_HIDE_TAGS = True
 DISQUS_SITENAME = "flpswebsite"
+THEME_COLOR = 'dark'
+PYGMENTS_STYLE = 'paraiso-dark'
+PYGMENTS_STYLE_DARK = 'paraiso-dark'
