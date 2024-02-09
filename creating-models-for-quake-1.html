@@ -34,13 +34,13 @@
  
 
 <meta name="author" content="Philipp Nahratow" />
-<meta name="description" content="Preface This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I&#39;ve learned. I&#39;m a hobbyist and learned most of this as I went along. Aside …" />
+<meta name="description" content="Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial Preface This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through …" />
 <meta name="keywords" content="gaming">
 
 
   <meta property="og:site_name" content="flp's website"/>
   <meta property="og:title" content="Creating Models For Quake 1"/>
-  <meta property="og:description" content="Preface This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I&#39;ve learned. I&#39;m a hobbyist and learned most of this as I went along. Aside …"/>
+  <meta property="og:description" content="Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial Preface This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="https://pnahratow.github.io/creating-models-for-quake-1.html"/>
   <meta property="og:type" content="article"/>
@@ -67,7 +67,7 @@
       <a href="https://pnahratow.github.io/">flp's website</a>
     </h1>
 
-    <p>"I like big pixels and I cannot lie"</p>
+    <p>I like big pixels and I cannot lie</p>
 
 
     <nav>
@@ -105,7 +105,8 @@
 
 
   <div>
-    <h1 id="preface">Preface</h1>
+    <p><em>Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial</em></p>
+<h1 id="preface">Preface</h1>
 <p>This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I've learned.</p>
 <p><img alt="Image of monster model" src="https://pnahratow.github.io/images/mdltut/mon_knut.png"></p>
 <p>I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.</p>
@@ -236,6 +237,7 @@
 <ul>
 <li>Identify <strong>extreme poses</strong> in your animation, pose them and set full character keyframes at those points. Then define the inbetween stages afterwards. Just going from left to right sometimes causes headaches and this bisecting approach usually works better.</li>
 <li><strong>Make animations loopable</strong>. There are two ideas here. Either you loop into the first frame of your animation so that the animations itself loop well. You can do this like this: When you are almost done with one animation copy the pose of the first frame of the current animation and paste it somewhere after your last keyframe. Then go back and find a good "almost there" pose and copy this as your actual last frame of the animation. This way you are blending into the loop. Another approach is to <strong>blend into your characters primary animation</strong> which usually is the run cycle. Do the same as before just use the first frame of your run cycle as the base.</li>
+<li>Better yet. Get to know the helpful quality of life features blender has around animation. If you are unfamiliar with this just know that there are serious shortcuts to be found everywhere. See <a href="https://www.youtube.com/watch?v=GAIZkIfXXjQ">Character animation for impatient people - Blender Tutorial</a></li>
 </ul>
 <p>I made an in-game <a href="https://youtu.be/sDa8cVHDhP4">youtube video</a> of my final model. At around 00:46 you can see all the animations that the model uses.</p>
 <p>This is a part I will have to learn alot about too. For the technicalities I can again refer you to <a href="https://www.youtube.com/playlist?list=PLyelx0TsmSpfoqyS2sBZvsuIL5av5DkJu">Blender Character Animation</a> other than that you'll have to trial-and-error yourself through this. Which is what I did too.</p>
@@ -244,7 +246,7 @@
 <li>Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake</li>
 <li>The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation. Another more explicit way to do this is by using the menu <em>Pose -&gt; Animation -&gt; Insert Keyframe -&gt; Whole Character</em></li>
 <li>Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.</li>
-<li>The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously.</li>
+<li>The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously if you are working on a brand new model.</li>
 </ul>
 <h1 id="exporting-to-mdl">Exporting To MDL</h1>
 <p>This step is pretty easy because the MDL exporter does everthing for you. Note that animation is exported from frame 1 to the frame you have currently selected.</p>
@@ -281,9 +283,7 @@
 <p>Having experience in programming will help but if you made it here you probably don't care and are willing to learn whatever is necessary. Which is good because programming is fun.</p>
 <h2 id="setup">Setup</h2>
 <p>You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my <code>PATH</code> environment variable and call it using <code>qcc</code> anywhere). When you run the compiler it looks for a file named <code>progs.src</code> in the current directory. It then compiles every quakec file listed there in order and creates the resultfile <code>PROGS.DAT</code> in the parent directory (which should be the root directory of your mod). When you start quake with the <code>-game &lt;yourdirectory&gt;</code> parameter quake will read your <code>PROGS.DAT</code> instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where <a href="http://www.insideqc.com/qctut/">the fun starts</a>.</p>
-<ul>
-<li><a href="https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf">QuakeC Reference Manual</a></li>
-</ul>
+<p><a href="https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf">QuakeC Reference Manual</a></p>
 <h2 id="coding">Coding</h2>
 <p>Read this <a href="https://tomeofpreach.wordpress.com/qexpo-tutorial/">Tutorial by Preach</a> (specifically Day6 and 7). If you use GMAX instead of blender the whole tutorial would be the one to read in the first place. However he explains how the animation data from the model is linked to the behaviour in quakec.</p>
 <p>Blender animation frame 0 gets discarded on mdl export and your animations should start at 1. Quake counts starting from 0 but that shouldn't concern you since you should use the <code>$frame</code> directive mentioned in the preach's tutorial. You only need to know how many frames each of your animations last. Give each of your animation frames a name with this <code>$frame</code> directive and then refer to these in the think functions.</p>
@@ -302,20 +302,6 @@
 
 
 
-<!-- Disqus -->
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'flpswebsite';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>
-    Please enable JavaScript to view comments.
-</noscript>
-<!-- End Disqus -->
 </article>
 
 <footer>

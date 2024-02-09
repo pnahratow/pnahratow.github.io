@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2016-03-12T00:00:00+01:00</updated><subtitle>"I like big pixels and I cannot lie"</subtitle><entry><title>Chainforcer Texture Painting Workflow</title><link href="https://pnahratow.github.io/chainforcer-texture-paint-workflow.html" rel="alternate"></link><published>2016-03-12T00:00:00+01:00</published><updated>2016-03-12T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-12:/chainforcer-texture-paint-workflow.html</id><content type="html">&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/SlOZWpu9t7o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-02-09T00:00:00+01:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Chainforcer (Baseogre) Release</title><link href="https://pnahratow.github.io/chainforcer-baseogre-release.html" rel="alternate"></link><published>2024-02-09T00:00:00+01:00</published><updated>2024-02-09T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-02-09:/chainforcer-baseogre-release.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" height="500px" /&gt;&lt;/p&gt;
+&lt;h2 id="files"&gt;Files&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre.zip"&gt;Baseogre Quake MDL files - baseogre.zip&lt;/a&gt; - &lt;em&gt;Includes baseogre.mdl and h_baseogre.mdl&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre_sources.zip"&gt;Baseogre Source Files - baseogre_sources.zip&lt;/a&gt; - &lt;em&gt;Includes the rigged and animated blender file and the texture as a .psd file including layers&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;This finalizes the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" height="500px" /&gt;&lt;/p&gt;
+&lt;h2 id="files"&gt;Files&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre.zip"&gt;Baseogre Quake MDL files - baseogre.zip&lt;/a&gt; - &lt;em&gt;Includes baseogre.mdl and h_baseogre.mdl&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre_sources.zip"&gt;Baseogre Source Files - baseogre_sources.zip&lt;/a&gt; - &lt;em&gt;Includes the rigged and animated blender file and the texture as a .psd file including layers&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;This finalizes the work shown in my earlier posts &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pnahratow.github.io/chainforcer-lowpoly-modeling-stages.html"&gt;Chainforcer Lowpoly Modeling Stages&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pnahratow.github.io/chainforcer-texture-paint-workflow.html"&gt;Chainforcer Texture Painting Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What can I say. Apparently I got so annoyed from painting this texture that I needed a seven year break to regenerate all the cells in my body or something.&lt;/p&gt;
+&lt;p&gt;Nevertheless, it is done. Here is an ingame demo of the guy.&lt;/p&gt;
+&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to &lt;code&gt;ogre.mdl&lt;/code&gt; and &lt;code&gt;h_ogre.mdl&lt;/code&gt; and put the in the progs directory of your mod and you are good to go.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/front.png" height="500px" /&gt;
+&lt;img src="https://pnahratow.github.io/images/baseogre_release/back.png" height="500px" /&gt;&lt;/p&gt;
+&lt;p&gt;If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. &lt;/p&gt;
+&lt;video controls playsinline autoplay muted loop preload="auto" height="500px"&gt;
+  &lt;source src="https://pnahratow.github.io/images/baseogre_release/rigged.webm" type="video/webm" /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;The texture is included as well as a source file with layers. It is a mess so don't expect anything.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Skin original size" src="https://pnahratow.github.io/images/baseogre_release/skin512.png"&gt;&lt;/p&gt;
+&lt;p&gt;After resize and color conversion to the quake palette the texture looks like this.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Skin converted for quake" src="https://pnahratow.github.io/images/baseogre_release/skin256_paletted_bayer_16.png"&gt;&lt;/p&gt;
+&lt;p&gt;Nothing more to say. Have fun!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/leatherface.png" height="600px" /&gt;
+&lt;img src="https://pnahratow.github.io/images/baseogre_release/muzzleflash.png" height="500px" /&gt;&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer Texture Painting Workflow</title><link href="https://pnahratow.github.io/chainforcer-texture-paint-workflow.html" rel="alternate"></link><published>2016-03-12T00:00:00+01:00</published><updated>2016-03-12T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-12:/chainforcer-texture-paint-workflow.html</id><content type="html">&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/SlOZWpu9t7o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;This is a timelapse video of me starting to texture my chainforcer model. I used blender and krita.&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer Lowpoly Modeling Stages</title><link href="https://pnahratow.github.io/chainforcer-lowpoly-modeling-stages.html" rel="alternate"></link><published>2016-03-11T00:00:00+01:00</published><updated>2016-03-11T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-11:/chainforcer-lowpoly-modeling-stages.html</id><summary type="html">&lt;p&gt;&lt;img alt="Chainforcer model" src="https://pnahratow.github.io/images/modprog/title_pose.png"&gt;&lt;/p&gt;
 &lt;p&gt;While working on this model I saved several in between backups. These screenshots show the stages the model went through.&lt;/p&gt;
@@ -61,10 +96,10 @@
 &lt;li&gt;Here the resulting UV map. I aligned some of the seam vertices to make hiding them easier later. Unwrapping option was set to "conformal" most of the time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img alt="UV map" src="https://pnahratow.github.io/images/modprog/15_uv_map.png"&gt;
-&lt;img alt="Testmap on model" src="https://pnahratow.github.io/images/modprog/14_test_uv.png"&gt;&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Creating Models For Quake 1</title><link href="https://pnahratow.github.io/creating-models-for-quake-1.html" rel="alternate"></link><published>2016-02-28T00:00:00+01:00</published><updated>2016-02-28T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-02-28:/creating-models-for-quake-1.html</id><summary type="html">&lt;h1 id="preface"&gt;Preface&lt;/h1&gt;
-&lt;p&gt;This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I've learned.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Image of monster model" src="https://pnahratow.github.io/images/mdltut/mon_knut.png"&gt;&lt;/p&gt;
-&lt;p&gt;I'm a hobbyist and learned most of this as I went along. Aside …&lt;/p&gt;</summary><content type="html">&lt;h1 id="preface"&gt;Preface&lt;/h1&gt;
+&lt;img alt="Testmap on model" src="https://pnahratow.github.io/images/modprog/14_test_uv.png"&gt;&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Creating Models For Quake 1</title><link href="https://pnahratow.github.io/creating-models-for-quake-1.html" rel="alternate"></link><published>2016-02-28T00:00:00+01:00</published><updated>2016-02-28T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-02-28:/creating-models-for-quake-1.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id="preface"&gt;Preface&lt;/h1&gt;
+&lt;p&gt;This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id="preface"&gt;Preface&lt;/h1&gt;
 &lt;p&gt;This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I've learned.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Image of monster model" src="https://pnahratow.github.io/images/mdltut/mon_knut.png"&gt;&lt;/p&gt;
 &lt;p&gt;I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.&lt;/p&gt;
@@ -195,6 +230,7 @@
 &lt;ul&gt;
 &lt;li&gt;Identify &lt;strong&gt;extreme poses&lt;/strong&gt; in your animation, pose them and set full character keyframes at those points. Then define the inbetween stages afterwards. Just going from left to right sometimes causes headaches and this bisecting approach usually works better.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Make animations loopable&lt;/strong&gt;. There are two ideas here. Either you loop into the first frame of your animation so that the animations itself loop well. You can do this like this: When you are almost done with one animation copy the pose of the first frame of the current animation and paste it somewhere after your last keyframe. Then go back and find a good "almost there" pose and copy this as your actual last frame of the animation. This way you are blending into the loop. Another approach is to &lt;strong&gt;blend into your characters primary animation&lt;/strong&gt; which usually is the run cycle. Do the same as before just use the first frame of your run cycle as the base.&lt;/li&gt;
+&lt;li&gt;Better yet. Get to know the helpful quality of life features blender has around animation. If you are unfamiliar with this just know that there are serious shortcuts to be found everywhere. See &lt;a href="https://www.youtube.com/watch?v=GAIZkIfXXjQ"&gt;Character animation for impatient people - Blender Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I made an in-game &lt;a href="https://youtu.be/sDa8cVHDhP4"&gt;youtube video&lt;/a&gt; of my final model. At around 00:46 you can see all the animations that the model uses.&lt;/p&gt;
 &lt;p&gt;This is a part I will have to learn alot about too. For the technicalities I can again refer you to &lt;a href="https://www.youtube.com/playlist?list=PLyelx0TsmSpfoqyS2sBZvsuIL5av5DkJu"&gt;Blender Character Animation&lt;/a&gt; other than that you'll have to trial-and-error yourself through this. Which is what I did too.&lt;/p&gt;
@@ -203,7 +239,7 @@
 &lt;li&gt;Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake&lt;/li&gt;
 &lt;li&gt;The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press &lt;kbd&gt;A&lt;/kbd&gt; to select every bone and then &lt;kbd&gt;ALT&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt; and &lt;kbd&gt;ALT&lt;/kbd&gt;+&lt;kbd&gt;G&lt;/kbd&gt; to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation. Another more explicit way to do this is by using the menu &lt;em&gt;Pose -&amp;gt; Animation -&amp;gt; Insert Keyframe -&amp;gt; Whole Character&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.&lt;/li&gt;
-&lt;li&gt;The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously.&lt;/li&gt;
+&lt;li&gt;The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously if you are working on a brand new model.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="exporting-to-mdl"&gt;Exporting To MDL&lt;/h1&gt;
 &lt;p&gt;This step is pretty easy because the MDL exporter does everthing for you. Note that animation is exported from frame 1 to the frame you have currently selected.&lt;/p&gt;
@@ -240,9 +276,7 @@
 &lt;p&gt;Having experience in programming will help but if you made it here you probably don't care and are willing to learn whatever is necessary. Which is good because programming is fun.&lt;/p&gt;
 &lt;h2 id="setup"&gt;Setup&lt;/h2&gt;
 &lt;p&gt;You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my &lt;code&gt;PATH&lt;/code&gt; environment variable and call it using &lt;code&gt;qcc&lt;/code&gt; anywhere). When you run the compiler it looks for a file named &lt;code&gt;progs.src&lt;/code&gt; in the current directory. It then compiles every quakec file listed there in order and creates the resultfile &lt;code&gt;PROGS.DAT&lt;/code&gt; in the parent directory (which should be the root directory of your mod). When you start quake with the &lt;code&gt;-game &amp;lt;yourdirectory&amp;gt;&lt;/code&gt; parameter quake will read your &lt;code&gt;PROGS.DAT&lt;/code&gt; instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where &lt;a href="http://www.insideqc.com/qctut/"&gt;the fun starts&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf"&gt;QuakeC Reference Manual&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf"&gt;QuakeC Reference Manual&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="coding"&gt;Coding&lt;/h2&gt;
 &lt;p&gt;Read this &lt;a href="https://tomeofpreach.wordpress.com/qexpo-tutorial/"&gt;Tutorial by Preach&lt;/a&gt; (specifically Day6 and 7). If you use GMAX instead of blender the whole tutorial would be the one to read in the first place. However he explains how the animation data from the model is linked to the behaviour in quakec.&lt;/p&gt;
 &lt;p&gt;Blender animation frame 0 gets discarded on mdl export and your animations should start at 1. Quake counts starting from 0 but that shouldn't concern you since you should use the &lt;code&gt;$frame&lt;/code&gt; directive mentioned in the preach's tutorial. You only need to know how many frames each of your animations last. Give each of your animation frames a name with this &lt;code&gt;$frame&lt;/code&gt; directive and then refer to these in the think functions.&lt;/p&gt;
