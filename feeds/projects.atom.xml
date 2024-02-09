@@ -18,13 +18,15 @@
 &lt;/ul&gt;
 &lt;p&gt;What can I say. Apparently I got so annoyed from painting this texture that I needed a seven year break to regenerate all the cells in my body or something.&lt;/p&gt;
 &lt;p&gt;Nevertheless, it is done. Here is an ingame demo of the guy.&lt;/p&gt;
-&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;
+    &lt;iframe src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to &lt;code&gt;ogre.mdl&lt;/code&gt; and &lt;code&gt;h_ogre.mdl&lt;/code&gt; and put the in the progs directory of your mod and you are good to go.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/front.png" style="max-height:500px" /&gt;
 &lt;img src="https://pnahratow.github.io/images/baseogre_release/back.png" style="max-height:500px" /&gt;&lt;/p&gt;
 &lt;p&gt;If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. &lt;/p&gt;
-&lt;video controls playsinline autoplay muted loop preload="auto" style="max-height:500px"&gt;
+&lt;video controls playsinline autoplay muted loop preload="auto" style="width: 100%; max-width: 400px; height: auto;"&gt;
   &lt;source src="https://pnahratow.github.io/images/baseogre_release/rigged.webm" type="video/webm" /&gt;
 &lt;/video&gt;
 
