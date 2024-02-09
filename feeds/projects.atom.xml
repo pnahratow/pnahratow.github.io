@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website - projects</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/projects.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-02-09T00:00:00+01:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Chainforcer (Baseogre) Release</title><link href="https://pnahratow.github.io/chainforcer-baseogre-release.html" rel="alternate"></link><published>2024-02-09T00:00:00+01:00</published><updated>2024-02-09T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-02-09:/chainforcer-baseogre-release.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" height="500px" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" style="max-height:500px" /&gt;&lt;/p&gt;
 &lt;h2 id="files"&gt;Files&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre.zip"&gt;Baseogre Quake MDL files - baseogre.zip&lt;/a&gt; - &lt;em&gt;Includes baseogre.mdl and h_baseogre.mdl&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre_sources.zip"&gt;Baseogre Source Files - baseogre_sources.zip&lt;/a&gt; - &lt;em&gt;Includes the rigged and animated blender file and the texture as a .psd file including layers&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="description"&gt;Description&lt;/h2&gt;
 &lt;p&gt;This finalizes the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" height="500px" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/cut.png" style="max-height:500px" /&gt;&lt;/p&gt;
 &lt;h2 id="files"&gt;Files&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre.zip"&gt;Baseogre Quake MDL files - baseogre.zip&lt;/a&gt; - &lt;em&gt;Includes baseogre.mdl and h_baseogre.mdl&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://pnahratow.github.io/images/baseogre_release/baseogre_sources.zip"&gt;Baseogre Source Files - baseogre_sources.zip&lt;/a&gt; - &lt;em&gt;Includes the rigged and animated blender file and the texture as a .psd file including layers&lt;/em&gt;&lt;/p&gt;
@@ -21,10 +21,10 @@
 &lt;iframe width="700" height="400" src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to &lt;code&gt;ogre.mdl&lt;/code&gt; and &lt;code&gt;h_ogre.mdl&lt;/code&gt; and put the in the progs directory of your mod and you are good to go.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/front.png" height="500px" /&gt;
-&lt;img src="https://pnahratow.github.io/images/baseogre_release/back.png" height="500px" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/front.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/images/baseogre_release/back.png" style="max-height:500px" /&gt;&lt;/p&gt;
 &lt;p&gt;If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. &lt;/p&gt;
-&lt;video controls playsinline autoplay muted loop preload="auto" height="500px"&gt;
+&lt;video controls playsinline autoplay muted loop preload="auto" style="max-height:500px"&gt;
   &lt;source src="https://pnahratow.github.io/images/baseogre_release/rigged.webm" type="video/webm" /&gt;
 &lt;/video&gt;
 
@@ -33,8 +33,8 @@
 &lt;p&gt;After resize and color conversion to the quake palette the texture looks like this.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Skin converted for quake" src="https://pnahratow.github.io/images/baseogre_release/skin256_paletted_bayer_16.png"&gt;&lt;/p&gt;
 &lt;p&gt;Nothing more to say. Have fun!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/leatherface.png" height="600px" /&gt;
-&lt;img src="https://pnahratow.github.io/images/baseogre_release/muzzleflash.png" height="500px" /&gt;&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer Texture Painting Workflow</title><link href="https://pnahratow.github.io/chainforcer-texture-paint-workflow.html" rel="alternate"></link><published>2016-03-12T00:00:00+01:00</published><updated>2016-03-12T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-12:/chainforcer-texture-paint-workflow.html</id><content type="html">&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/SlOZWpu9t7o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/images/baseogre_release/leatherface.png"  style="max-height:600px" /&gt;
+&lt;img src="https://pnahratow.github.io/images/baseogre_release/muzzleflash.png" style="max-height:500px" /&gt;&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer Texture Painting Workflow</title><link href="https://pnahratow.github.io/chainforcer-texture-paint-workflow.html" rel="alternate"></link><published>2016-03-12T00:00:00+01:00</published><updated>2016-03-12T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-12:/chainforcer-texture-paint-workflow.html</id><content type="html">&lt;iframe width="700" height="400" src="https://www.youtube.com/embed/SlOZWpu9t7o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;This is a timelapse video of me starting to texture my chainforcer model. I used blender and krita.&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer Lowpoly Modeling Stages</title><link href="https://pnahratow.github.io/chainforcer-lowpoly-modeling-stages.html" rel="alternate"></link><published>2016-03-11T00:00:00+01:00</published><updated>2016-03-11T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2016-03-11:/chainforcer-lowpoly-modeling-stages.html</id><summary type="html">&lt;p&gt;&lt;img alt="Chainforcer model" src="https://pnahratow.github.io/images/modprog/title_pose.png"&gt;&lt;/p&gt;
 &lt;p&gt;While working on this model I saved several in between backups. These screenshots show the stages the model went through.&lt;/p&gt;
@@ -154,7 +154,6 @@
 &lt;h1 id="software"&gt;Software&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blender.org"&gt;Blender&lt;/a&gt; - for 3d modeling&lt;/li&gt;
-&lt;li&gt;~~&lt;a href="http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl"&gt;Taniwha's mdl exporter&lt;/a&gt; - for exporting to mdl format~~&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bitbucket.org/khreathor/mdl-for-blender/wiki/Home"&gt;Quake MDL import/export plugin for Blender&lt;/a&gt; - for exporting to mdl format&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://krita.org"&gt;Krita&lt;/a&gt; - for digital painting&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.fteqcc.org/"&gt;Fteqcc&lt;/a&gt; - for compiling quakec&lt;/li&gt;
