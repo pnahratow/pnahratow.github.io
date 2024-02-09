@@ -5,7 +5,7 @@ Tags: gaming
 
 *Hey, I finished the project and it only took about 400 weeks.*
 
-<img src="{static}/images/baseogre_release/cut.png" height="500px" />
+<img src="{static}/images/baseogre_release/cut.png" style="max-height:500px" />
 
 ## Files
 
@@ -28,12 +28,12 @@ Nevertheless, it is done. Here is an ingame demo of the guy.
 
 The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to `ogre.mdl` and `h_ogre.mdl` and put the in the progs directory of your mod and you are good to go.
 
-<img src="{static}/images/baseogre_release/front.png" height="500px" />
-<img src="{static}/images/baseogre_release/back.png" height="500px" />
+<img src="{static}/images/baseogre_release/front.png" style="max-height:500px" />
+<img src="{static}/images/baseogre_release/back.png" style="max-height:500px" />
 
 If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. 
 
-<video controls playsinline autoplay muted loop preload="auto" height="500px">
+<video controls playsinline autoplay muted loop preload="auto" style="max-height:500px">
   <source src="{static}/images/baseogre_release/rigged.webm" type="video/webm" />
 </video>
 
@@ -47,6 +47,6 @@ After resize and color conversion to the quake palette the texture looks like th
 
 Nothing more to say. Have fun!
 
-<img src="{static}/images/baseogre_release/leatherface.png" height="600px" />
-<img src="{static}/images/baseogre_release/muzzleflash.png" height="500px" />
+<img src="{static}/images/baseogre_release/leatherface.png"  style="max-height:600px" />
+<img src="{static}/images/baseogre_release/muzzleflash.png" style="max-height:500px" />
 

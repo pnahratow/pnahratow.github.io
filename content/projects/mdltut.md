@@ -20,7 +20,6 @@ I'm a hobbyist and learned most of this as I went along. Aside from the part abo
 # Software
 
 * [Blender](http://blender.org) - for 3d modeling
-* ~~[Taniwha's mdl exporter](http://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Quake_mdl) - for exporting to mdl format~~
 * [Quake MDL import/export plugin for Blender](https://bitbucket.org/khreathor/mdl-for-blender/wiki/Home) - for exporting to mdl format
 * [Krita](http://krita.org) - for digital painting
 * [Fteqcc](https://www.fteqcc.org/) - for compiling quakec
