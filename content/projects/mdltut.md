@@ -3,6 +3,7 @@ Slug: creating-models-for-quake-1
 Date: 2016-02-28
 Tags: gaming
 
+*Update 2024: I fixed some of the broken and outdated links. Removed some steps which no longer work, Added some information which I felt was beneficial*
 
 # Preface
 
@@ -11,7 +12,6 @@ This is kind of a tutorial/gathering of infomation about creating a model (speci
 ![Image of monster model]({static}/images/mdltut/mon_knut.png)
 
 I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.
-
 
 # Index
 
@@ -150,6 +150,7 @@ Some tips
 
 - Identify **extreme poses** in your animation, pose them and set full character keyframes at those points. Then define the inbetween stages afterwards. Just going from left to right sometimes causes headaches and this bisecting approach usually works better.
 - **Make animations loopable**. There are two ideas here. Either you loop into the first frame of your animation so that the animations itself loop well. You can do this like this: When you are almost done with one animation copy the pose of the first frame of the current animation and paste it somewhere after your last keyframe. Then go back and find a good "almost there" pose and copy this as your actual last frame of the animation. This way you are blending into the loop. Another approach is to **blend into your characters primary animation** which usually is the run cycle. Do the same as before just use the first frame of your run cycle as the base.
+- Better yet. Get to know the helpful quality of life features blender has around animation. If you are unfamiliar with this just know that there are serious shortcuts to be found everywhere. See [Character animation for impatient people - Blender Tutorial](https://www.youtube.com/watch?v=GAIZkIfXXjQ)
 
 I made an in-game [youtube video](https://youtu.be/sDa8cVHDhP4) of my final model. At around 00:46 you can see all the animations that the model uses.
 
@@ -160,7 +161,7 @@ Some things to note
 * Quake animates at 10fps, set blender to this playback speed to see how it shows up in quake
 * The different animations (like jump, die, shoot) will be one after the other in the timeline. If you have auto-keyframing (red record button) activated you can press <kbd>A</kbd> to select every bone and then <kbd>ALT</kbd>+<kbd>R</kbd> and <kbd>ALT</kbd>+<kbd>G</kbd> to reset the pose while also thouching every bone whichs creates a keyframe for each bone. This eliminates weird interpolation issues and is something I did for the first frame of each animation. Another more explicit way to do this is by using the menu *Pose -> Animation -> Insert Keyframe -> Whole Character*
 * Use existing quake models for reference about how many frames an animation should take and how the poses are spaced. I used the dog/rottweiler for reference.
-* The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously.
+* The whole animation part goes hand in hand with the quakec and your idea of the behaviour of the model. You probably should do the coding and animating simultaneously if you are working on a brand new model.
 
 # Exporting To MDL
 
@@ -222,7 +223,7 @@ Having experience in programming will help but if you made it here you probably 
 
 You will need the code base and also the compiler (fteqcc). Create a directory in you mod directory and name it qc or whatever. Extract the code base there. For simplicity's sake also copy the compiler there. (I've put the compiler binary in my `PATH` environment variable and call it using `qcc` anywhere). When you run the compiler it looks for a file named `progs.src` in the current directory. It then compiles every quakec file listed there in order and creates the resultfile `PROGS.DAT` in the parent directory (which should be the root directory of your mod). When you start quake with the `-game <yourdirectory>` parameter quake will read your `PROGS.DAT` instead of the vanilla quake one and all gameplay behaves the way you defined in the quakec files. This is where [the fun starts](http://www.insideqc.com/qctut/).
 
-* [QuakeC Reference Manual](https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf)
+[QuakeC Reference Manual](https://pages.cs.wisc.edu/~jeremyp/quake/quakec/quakec.pdf)
 
 ## Coding
 
