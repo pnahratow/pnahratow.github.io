@@ -24,7 +24,9 @@ What can I say. Apparently I got so annoyed from painting this texture that I ne
 
 Nevertheless, it is done. Here is an ingame demo of the guy.
 
-<iframe width="700" height="400" src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+    <iframe src="https://www.youtube.com/embed/UVERBoYa40g" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to `ogre.mdl` and `h_ogre.mdl` and put the in the progs directory of your mod and you are good to go.
 
@@ -33,7 +35,7 @@ The animations are setup so that they can directly replace the original Ogre mod
 
 If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. 
 
-<video controls playsinline autoplay muted loop preload="auto" style="max-height:500px">
+<video controls playsinline autoplay muted loop preload="auto" style="width: 100%; max-width: 400px; height: auto;">
   <source src="{static}/images/baseogre_release/rigged.webm" type="video/webm" />
 </video>
 
