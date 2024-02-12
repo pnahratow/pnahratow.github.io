@@ -33,7 +33,7 @@ DEFAULT_PAGINATION = 20
 DEFAULT_DATE_FORMAT = ('%Y-%m-%d')
 
 STATIC_PATHS = [
-    'images',
+    'static',
     'extra/robots.txt',
     'extra/favicon.ico'
 ]
@@ -56,7 +56,7 @@ PLUGINS = []
 
 THEME = "Flex"
 SITETITLE = SITENAME
-SITELOGO = "/images/about/baseogre_avatar.png"
+SITELOGO = "/static/about/baseogre_avatar.png"
 SITESUBTITLE = "I like big pixels and I cannot lie"
 HOME_HIDE_TAGS = True
 # DISQUS_SITENAME = "flpswebsite"

@@ -2,7 +2,7 @@ Title: About
 Slug: about
 Date: 2016-02-10
 
-![Philipp Avatar]({static}/images/about/avatar.png)
+![Philipp Avatar]({static}/static/about/avatar.png)
 
 Hello my name is Philipp.
 

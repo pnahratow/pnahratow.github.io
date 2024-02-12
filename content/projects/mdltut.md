@@ -9,7 +9,7 @@ Tags: gaming
 
 This is kind of a tutorial/gathering of infomation about creating a model (specifically enemy model) for quake 1. I recently went through the whole process and want to share some of the stuff I've learned.
 
-![Image of monster model]({static}/images/mdltut/mon_knut.png)
+![Image of monster model]({static}/static/mdltut/mon_knut.png)
 
 I'm a hobbyist and learned most of this as I went along. Aside from the part about texture-painting (which I have done in before) this is more a collection of links than a tutorial.
 
@@ -37,13 +37,13 @@ There is alot to learn about blender and I haven't really scratched the surface 
 
 Aside from that I would urge you to visit the [Youtube Channel of Darrin Lile](https://www.youtube.com/user/DarrinLile) because thats where I learned what I wanted in an enjoyable and easy to grasp manner.
 
-![Plain model]({static}/images/mdltut/plain_model.png)
+![Plain model]({static}/static/mdltut/plain_model.png)
 
 # Creating The UV Map
 
 In order to paint the texture the model needs to be unwrapped. Which means the models needs information about how a 2d image would be applied to the 3d polygons to be its texture. A result of this looks something like this.
 
-![UV Maps example]({static}/images/mdltut/uv_map.png)
+![UV Maps example]({static}/static/mdltut/uv_map.png)
 
 Again by Darrin Lile: [Blender Character UV Mapping](https://youtube.com/playlist?list=PLyelx0TsmSpdQwcx1OloZuW48bOUJQ02s&si=z-NWbs_v2odMHITa) you can pretty much follow this tutorial exactly.
 
@@ -75,7 +75,7 @@ Photoshop is great but expensive. Gimp is great but also not. I recently tried K
 
 A tool to lay down paint. I use only one because I'm not very experienced and don't know how to handle the many presets there are. I know how to use a real pencil and thats why I fiddle with the brush settings until I can comfortably create this gradienty kind of thing in one stroke.
 
-![A painted gradient]({static}/images/mdltut/brush_gradient.png)
+![A painted gradient]({static}/static/mdltut/brush_gradient.png)
 
 Here are a couple of tips to get this
 
@@ -90,7 +90,7 @@ Here are a couple of tips to get this
 
 Literally satan. Having hard edges is a thing that makes stuff look crisp. It's why I use a hard brush to paint. Blurry brushstrokes is one of the most common things that makes beginner artwork look bad. Still I use this tool. Most of the time when evening out too harsh highlights like this.
 
-![A smudged highlight]({static}/images/mdltut/smudge_hl.png)
+![A smudged highlight]({static}/static/mdltut/smudge_hl.png)
 
 This brush is 2-4px wide and at 20-40% strength.
 
@@ -98,7 +98,7 @@ This brush is 2-4px wide and at 20-40% strength.
 
 A big round brush with soft edges and very low opacity. I use this to create soft gradients or to apply color lighly without disrupting anything. Usually in a situation where I have a selection and then use the side of the brush like this.
 
-![Application for soft brushes]({static}/images/mdltut/softbrush_appl.png)
+![Application for soft brushes]({static}/static/mdltut/softbrush_appl.png)
 
 ## Workflow and Tips
 
@@ -112,13 +112,13 @@ I made a [timelapse video of my texturing workflow]({filename}/projects/texworkf
 
 I paint exclusively in the 2d software but I need to constantly check the 3d model if everything is right. To do this comfortably I have blender on the 2nd monitor (or in the background). I use "3D View Full" as the screenlayout to get rid of the grid and stuff. In the view options <kbd>N</kbd> I activate Display -> Shadeless because I don't want blenders ugly shading but fullbright instead. I split the window and also open a UV-Image-Editor view and activiate the options side-bar <kbd>N</kbd>. Under image there is the texture file and you can press the refresh button next to it to reload the texture. Blender can read PSD files and krita and gimp can also work with them. PSD files preserve layers and thats how this all becomes comfortable. Paint a little, save, press refresh in blender, repeat.
 
-![Blender Reload Texture]({static}/images/mdltut/reload_tex.png)
+![Blender Reload Texture]({static}/static/mdltut/reload_tex.png)
 
 ### Double Resolution
 
 My brushstrokes are wonky and I don't know how to do close-up pixel pushing. What I do to help with that is paint the texture in twice the resolution. If the target texture is 256x256px I paint in 512x512px. The downscaling in the end smooths out some of the irregularities. Lazily done gradients become smooth and some mistakes disappear. However the whole image becomes blurry and looses contrast too. To help with that there is a filter called "Unsharp Mask" (look under sharpen or enhance). Use with low values. The image below shows how to get some of the crispness back with this filter.
 
-![Unsharp Mask filter result]({static}/images/mdltut/unsharp_mask.png)
+![Unsharp Mask filter result]({static}/static/mdltut/unsharp_mask.png)
 
 ### Blending Modes
 
@@ -137,7 +137,7 @@ The keyword here is inverse kinematics and I can only point you to videos by Dar
 
 A way easier approach for is using Blenders riggify addon. See [Rigify Made Easy](https://www.youtube.com/watch?v=PKPo0-leJmU). Which makes it easy because there a predefined skeletons you can use by just aligning the joints with your model and pressing "Generate Rig".
 
-![Bone rig]({static}/images/mdltut/bone_rig.png)
+![Bone rig]({static}/static/mdltut/bone_rig.png)
 
 # Animation
 
@@ -171,7 +171,7 @@ Check this video [MDL for Blender 2.8 - Common Problems, Quirks and Solutions
 
 ## The Quake Palette
 
-![Quake color palette]({static}/images/mdltut/quake_pal.png)
+![Quake color palette]({static}/static/mdltut/quake_pal.png)
 
 https://quakewiki.org/wiki/Quake_palette
 
@@ -179,13 +179,13 @@ Quake 1 textures have only 256 colors. Luckily this is something the mdl exporte
 
 This is how the texture looks after the palette conversion. You can see some artifacts in the gradients which makes it look like its 1996.
 
-![Texture after conversion]({static}/images/mdltut/after_quakepal.png)
+![Texture after conversion]({static}/static/mdltut/after_quakepal.png)
 
 ### Palette conversion and Dithering
 
 As you can see there are some nasty jumps in the gradient there. To avoid this and also the issue with the fullbright colors you can take care of the color conversion manually. For this you can use Krita using the *Map -> Palettelize* filter. There you have a bunch of options to make it look good. You can also use a dedicated tool like [SLK-img2pixel](https://captain4lk.itch.io/slk-img2pixel).
 
-![Palette conversion comparison]({static}/images/mdltut/dither_comp.png)
+![Palette conversion comparison]({static}/static/mdltut/dither_comp.png)
 
 In the example above you can see the result of the exporter on the left and on the right I used SLK-img2pixel. You can see the it all looks much nicer. If you zoom in you can also see the familiar dithering patterns from ancient times.
 
@@ -212,7 +212,7 @@ Size defines the bounding box. Model defines the model that is shown in the edit
 
 To add your .fgd file in trenchbroom got to the inspector on the right. At the bottom of the entity tab you can use external .fgd files. At the bottom of the map tab you can activate mods directories to be read.
 
-![Trenchbroom screenshot]({static}/images/mdltut/trenchbroom.png)
+![Trenchbroom screenshot]({static}/static/mdltut/trenchbroom.png)
 
 # QuakeC
 
@@ -234,4 +234,4 @@ Of course defining animations isn't the end of it. For the whole behaviour part 
 
 I hope you did get good infomation out of this tutorial and I wish you good look realizing your project.
 
-![In-game screenshot]({static}/images/mdltut/ingame.png)
+![In-game screenshot]({static}/static/mdltut/ingame.png)
