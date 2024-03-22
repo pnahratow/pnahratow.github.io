@@ -56,7 +56,7 @@ PLUGINS = []
 
 THEME = "Flex"
 SITETITLE = SITENAME
-SITELOGO = "/static/about/baseogre_avatar.png"
+SITELOGO = "/static/about/avat_128.png"
 SITESUBTITLE = "I like big pixels and I cannot lie"
 HOME_HIDE_TAGS = True
 # DISQUS_SITENAME = "flpswebsite"
