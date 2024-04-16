@@ -2,6 +2,13 @@ Title: Gallery
 Slug: gallery
 Date: 2024-03-31
 
+## Librequake Boss (Fire) - 2024/04
+
+Alternative Texture for the Cthon replacement for the Librequake project
+
+<img src="{static}/static/gallery/lqboss_fire_01.png" style="max-height:500px" />
+<img src="{static}/static/gallery/lqboss_fire_02.png" style="max-height:500px" />
+<img src="{static}/static/gallery/lqboss_fire_03.png" style="max-height:500px" />
 
 ## Fat Sea Monster - 2024/03
 
