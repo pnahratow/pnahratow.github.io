@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-02-09T00:00:00+01:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Chainforcer (Baseogre) Release</title><link href="https://pnahratow.github.io/chainforcer-baseogre-release.html" rel="alternate"></link><published>2024-02-09T00:00:00+01:00</published><updated>2024-02-09T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-02-09:/chainforcer-baseogre-release.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-05-06T00:00:00+02:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Librequake Shambler Texture Painting Workflow</title><link href="https://pnahratow.github.io/lqshambler-paint-workflow.html" rel="alternate"></link><published>2024-05-06T00:00:00+02:00</published><updated>2024-05-06T00:00:00+02:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-05-06:/lqshambler-paint-workflow.html</id><summary type="html">&lt;p&gt;Once again I have recorded myself painting.&lt;/p&gt;
+&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;
+    &lt;iframe src="https://www.youtube.com/embed/FU66AWL2gD8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Since I switchted from painting in Krita 2D only to using Blender I thought maybe that would be a cool idea.&lt;/p&gt;
+&lt;p&gt;It started with fixing seams in blender, where I would go over problematic seams with the smudge tool in blender and I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Once again I have recorded myself painting.&lt;/p&gt;
+&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;
+    &lt;iframe src="https://www.youtube.com/embed/FU66AWL2gD8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Since I switchted from painting in Krita 2D only to using Blender I thought maybe that would be a cool idea.&lt;/p&gt;
+&lt;p&gt;It started with fixing seams in blender, where I would go over problematic seams with the smudge tool in blender and I always hesitated
+to just fully do it in Blender because the toolset seems so shit.&lt;/p&gt;
+&lt;p&gt;There are no layers, no filters, no everything. Its super bare bones.&lt;/p&gt;
+&lt;p&gt;Let me tell you, it turns out I don't even need all these tools.
+The toolset in blender is not zero. There are blending modes, smudge and blur. You can easliy mask of where you want to paint an where not. There is mirroring.
+There is a color picker and swatcher, a lot of undo steps and thats pretty much enough.&lt;/p&gt;
+&lt;p&gt;I used krita on two occasions. When I want to work with the palette conversion in realtime and when I need to copy paste 2d sections for some reasons.&lt;/p&gt;
+&lt;p&gt;The highend route to take is Substance Painter with &lt;a href="https://actiondawg.itch.io/pixel8r2"&gt;Pixel8r&lt;/a&gt; and if you have the money just use that.
+For all the other poor bastards blender does it just well enough.&lt;/p&gt;
+&lt;h2 id="the-texture"&gt;The texture&lt;/h2&gt;
+&lt;p&gt;This texure is for the Librequake shambler replacement which is based of this concept and the main inspiration for the texturing&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/static/lqshambler/00_concept.png" style="max-height:500px" /&gt;&lt;/p&gt;
+&lt;p&gt;Here are the results&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/static/lqshambler/01_hollow_tex_front.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/02_hollow_tex_back.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/03_hollow_texture.png" style="max-height:500px" /&gt;&lt;/p&gt;
+&lt;p&gt;I have to say that recording myself kind of sucked the fun out of texturing. I am also not really happy with the results and will attribute that by at least 50% to the fact that I was recording. I can't help but feel rushed. The realtime work in the video is 2.5h which seems very little.&lt;/p&gt;</content><category term="projects"></category><category term="gaming"></category></entry><entry><title>Chainforcer (Baseogre) Release</title><link href="https://pnahratow.github.io/chainforcer-baseogre-release.html" rel="alternate"></link><published>2024-02-09T00:00:00+01:00</published><updated>2024-02-09T00:00:00+01:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-02-09:/chainforcer-baseogre-release.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Hey, I finished the project and it only took about 400 weeks.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://pnahratow.github.io/static/baseogre_release/cut.png" style="max-height:500px" /&gt;&lt;/p&gt;
 &lt;h2 id="files"&gt;Files&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://pnahratow.github.io/static/baseogre_release/baseogre.zip"&gt;Baseogre Quake MDL files - baseogre.zip&lt;/a&gt; - &lt;em&gt;Includes baseogre.mdl and h_baseogre.mdl&lt;/em&gt;&lt;/p&gt;
