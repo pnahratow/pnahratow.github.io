@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-05-06T00:00:00+02:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Librequake Shambler Texture Painting Workflow</title><link href="https://pnahratow.github.io/lqshambler-paint-workflow.html" rel="alternate"></link><published>2024-05-06T00:00:00+02:00</published><updated>2024-05-06T00:00:00+02:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-05-06:/lqshambler-paint-workflow.html</id><summary type="html">&lt;p&gt;Once again I have recorded myself painting.&lt;/p&gt;
-&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;
-    &lt;iframe src="https://www.youtube.com/embed/FU66AWL2gD8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Since I switchted from painting in Krita 2D only to using Blender I thought maybe that would be a cool idea.&lt;/p&gt;
-&lt;p&gt;It started with fixing seams in blender, where I would go over problematic seams with the smudge tool in blender and I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Once again I have recorded myself painting.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>flp's website</title><link href="https://pnahratow.github.io/" rel="alternate"></link><link href="https://pnahratow.github.io/feeds/all.atom.xml" rel="self"></link><id>https://pnahratow.github.io/</id><updated>2024-05-06T00:00:00+02:00</updated><subtitle>I like big pixels and I cannot lie</subtitle><entry><title>Librequake Shambler Texture Painting Workflow</title><link href="https://pnahratow.github.io/lqshambler-paint-workflow.html" rel="alternate"></link><published>2024-05-06T00:00:00+02:00</published><updated>2024-05-06T00:00:00+02:00</updated><author><name>Philipp Nahratow</name></author><id>tag:pnahratow.github.io,2024-05-06:/lqshambler-paint-workflow.html</id><summary type="html">&lt;h2 id="update-2024-09-06"&gt;Update (2024-09-06)&lt;/h2&gt;
+&lt;p&gt;I was very unhappy with the texture result and restarted the whole process without recording myself and paying attention that the colors
+are pleasing. The first one was way too dark and dirty and I am happier with this second attempt.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/static/lqshambler/04_retex_front.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/05_retex_back.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/06_retex_flat.png" style="max-height:500px" /&gt;&lt;/p&gt;
+&lt;h2 id="original-post-2024-05-06"&gt;Original Post (2024-05-06)&lt;/h2&gt;
+&lt;p&gt;Once again I have …&lt;/p&gt;</summary><content type="html">&lt;h2 id="update-2024-09-06"&gt;Update (2024-09-06)&lt;/h2&gt;
+&lt;p&gt;I was very unhappy with the texture result and restarted the whole process without recording myself and paying attention that the colors
+are pleasing. The first one was way too dark and dirty and I am happier with this second attempt.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pnahratow.github.io/static/lqshambler/04_retex_front.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/05_retex_back.png" style="max-height:500px" /&gt;
+&lt;img src="https://pnahratow.github.io/static/lqshambler/06_retex_flat.png" style="max-height:500px" /&gt;&lt;/p&gt;
+&lt;h2 id="original-post-2024-05-06"&gt;Original Post (2024-05-06)&lt;/h2&gt;
+&lt;p&gt;Once again I have recorded myself painting.&lt;/p&gt;
 &lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;
     &lt;iframe src="https://www.youtube.com/embed/FU66AWL2gD8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
