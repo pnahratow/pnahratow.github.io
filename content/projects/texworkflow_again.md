@@ -4,6 +4,17 @@ Date: 2024-05-06
 Tags: gaming
 
 
+## Update (2024-09-06)
+
+I was very unhappy with the texture result and restarted the whole process without recording myself and paying attention that the colors
+are pleasing. The first one was way too dark and dirty and I am happier with this second attempt.
+
+<img src="{static}/static/lqshambler/04_retex_front.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/05_retex_back.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/06_retex_flat.png" style="max-height:500px" />
+
+## Original Post (2024-05-06)
+
 Once again I have recorded myself painting.
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">

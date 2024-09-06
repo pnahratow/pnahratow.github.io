@@ -2,6 +2,12 @@ Title: Gallery
 Slug: gallery
 Date: 2024-03-31
 
+## Librequake Shambler - 2024/09
+
+<img src="{static}/static/lqshambler/04_retex_front.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/05_retex_back.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/06_retex_flat.png" style="max-height:500px" />
+
 ## Librequake Boss (Fire) - 2024/04
 
 Alternative Texture for the Cthon replacement for the Librequake project
