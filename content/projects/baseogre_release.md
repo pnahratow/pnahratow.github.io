@@ -5,7 +5,7 @@ Tags: gaming
 
 *Hey, I finished the project and it only took about 400 weeks.*
 
-<img src="{static}/static/baseogre_release/cut.png" style="max-height:500px" />
+<img src="{static}/static/baseogre_release/cut.png" style="max-height:512px" />
 
 ## Files
 
@@ -15,9 +15,9 @@ Tags: gaming
 
 ## Description
 
-This finalizes the work shown in my earlier posts 
+This finalizes the work shown in my earlier posts
 
-- [Chainforcer Lowpoly Modeling Stages]({filename}/projects/modprog.md) 
+- [Chainforcer Lowpoly Modeling Stages]({filename}/projects/modprog.md)
 - [Chainforcer Texture Painting Workflow]({filename}/projects/texworkflow.md)
 
 What can I say. Apparently I got so annoyed from painting this texture that I needed a seven year break to regenerate all the cells in my body or something.
@@ -30,10 +30,10 @@ Nevertheless, it is done. Here is an ingame demo of the guy.
 
 The animations are setup so that they can directly replace the original Ogre model. Maybe to use the ogre enemy in base maps with a more fitting look. To do this just download the .mdl files and rename them to `ogre.mdl` and `h_ogre.mdl` and put the in the progs directory of your mod and you are good to go.
 
-<img src="{static}/static/baseogre_release/front.png" style="max-height:500px" />
-<img src="{static}/static/baseogre_release/back.png" style="max-height:500px" />
+<img src="{static}/static/baseogre_release/front.png" style="max-height:512px" />
+<img src="{static}/static/baseogre_release/back.png" style="max-height:512px" />
 
-If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated. 
+If you are interested in technical details or just generally want to play with the source files. I have provided them at the top. In there you have the final state of the blender file after I was done with the process. The character is rigged and animated.
 
 <video controls playsinline autoplay muted loop preload="auto" style="width: 100%; max-width: 400px; height: auto;">
   <source src="{static}/static/baseogre_release/rigged.webm" type="video/webm" />
@@ -50,5 +50,4 @@ After resize and color conversion to the quake palette the texture looks like th
 Nothing more to say. Have fun!
 
 <img src="{static}/static/baseogre_release/leatherface.png"  style="max-height:600px" />
-<img src="{static}/static/baseogre_release/muzzleflash.png" style="max-height:500px" />
-
+<img src="{static}/static/baseogre_release/muzzleflash.png" style="max-height:512px" />

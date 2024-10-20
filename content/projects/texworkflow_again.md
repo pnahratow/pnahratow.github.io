@@ -9,9 +9,9 @@ Tags: gaming
 I was very unhappy with the texture result and restarted the whole process without recording myself and paying attention that the colors
 are pleasing. The first one was way too dark and dirty and I am happier with this second attempt.
 
-<img src="{static}/static/lqshambler/04_retex_front.png" style="max-height:500px" />
-<img src="{static}/static/lqshambler/05_retex_back.png" style="max-height:500px" />
-<img src="{static}/static/lqshambler/06_retex_flat.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/04_retex_front.png" style="max-height:512px" />
+<img src="{static}/static/lqshambler/05_retex_back.png" style="max-height:512px" />
+<img src="{static}/static/lqshambler/06_retex_flat.png" style="max-height:512px" />
 
 ## Original Post (2024-05-06)
 
@@ -41,12 +41,12 @@ For all the other poor bastards blender does it just well enough.
 
 This texure is for the Librequake shambler replacement which is based of this concept and the main inspiration for the texturing
 
-<img src="{static}/static/lqshambler/00_concept.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/00_concept.png" style="max-height:512px" />
 
 Here are the results
 
-<img src="{static}/static/lqshambler/01_hollow_tex_front.png" style="max-height:500px" />
-<img src="{static}/static/lqshambler/02_hollow_tex_back.png" style="max-height:500px" />
-<img src="{static}/static/lqshambler/03_hollow_texture.png" style="max-height:500px" />
+<img src="{static}/static/lqshambler/01_hollow_tex_front.png" style="max-height:512px" />
+<img src="{static}/static/lqshambler/02_hollow_tex_back.png" style="max-height:512px" />
+<img src="{static}/static/lqshambler/03_hollow_texture.png" style="max-height:512px" />
 
 I have to say that recording myself kind of sucked the fun out of texturing. I am also not really happy with the results and will attribute that by at least 50% to the fact that I was recording. I can't help but feel rushed. The realtime work in the video is 2.5h which seems very little.
