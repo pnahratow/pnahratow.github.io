@@ -9,7 +9,7 @@ Tags: gaming
 
 ## Release File
 
-[**monster_chainforcer.zip**]({static}/static/chainforcer_release/chainforcer.zip) -  Includes mdl, sounds and code
+[**monster_chainforcer.zip**]({static}/static/chainforcer_release/monster_chainforcer.zip) -  Includes mdl, sounds and code
 
 ### Licenses
 
